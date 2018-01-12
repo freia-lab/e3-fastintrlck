@@ -1,0 +1,4 @@
+To start the module on your local DM go to directory above modules 
+directory and start the IOC with the following command:
+
+rm require.lock-*; iocsh -r ioc_seq_freia,local -c 'requireSnippet(seq-freia.cmd, "P=IntlkF-cRio1")'

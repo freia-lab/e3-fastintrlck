@@ -1,0 +1,91 @@
+record (bo, "$(P):PMD:cStartCp") {
+  field(DESC, "Start PMD copy")
+  field(ZNAM, "Do nothing")
+  field(ONAM, "Copy PMD")
+}
+
+#record (mbboDirect, "$(P):PMD:cChanSel") {
+#  field(DESC, "PMD channels to copy")
+#  field(NOBT, "16")
+#}
+
+record (waveform, $(P):PMD-0) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-1) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-2) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-3) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-4) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-5) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-6) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-7) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-8) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-9) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-10) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-11) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-12) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-13) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-14) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-15) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
