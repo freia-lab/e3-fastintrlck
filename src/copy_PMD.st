@@ -8,10 +8,10 @@ int sPMDon, sIndx, cIndx;
 int cmdGet;
 
 short working=0,  channel = 0;
-short cChanSel;
+short cSelChan;
 
 assign startCp to "{p1}:PMD:cStartCp";
-// assign cChanSel to "{p1}:PMD:cChanSel";
+assign cSelChan to "{p1}:PMD:cSelChan";
 assign pmd_buf to "{p1}:PMD:sRdV";
 assign pmds[0] to "{p1}:PMD-0";
 assign pmds[1] to "{p1}:PMD-1";
@@ -38,19 +38,23 @@ monitor sIndx;
 monitor sPMDon;
 monitor cmdGet;
 monitor startCp;
+monitor cSelChan;
 
-ss volt_check {
+ss cp_PMD {
   state init {
-//    printf ("In state init\n");
+    entry {
+      working = 0;
+      channel = 0;
+    }
     when (pvConnectCount() == pvAssignCount()) {
       printf ("In state init - all pvs connected\n");
     } state blocked
     when (delay(5) || (pvConnectCount() != pvAssignCount())) {
+      cSelChan = 0;
     } state connect_timeout
   }
 
   state connect_timeout {
-//    printf ("In state connect_timeout\n");
     when (delay (5)) {
       printf ("Leaving state connect_timeout\n");
     } state init
@@ -60,37 +64,26 @@ ss volt_check {
     entry { 
       printf ("Iddle...\n");
     }
-    when (pvConnectCount() != pvAssignCount()) {} state init
+    when (pvConnectCount() != pvAssignCount()) {} state connect_timeout
     when (sPMDon) {} state blocked
-    when (startCp || working) {} state next_channel
+    when (startCp || working) {
+      if (working == 0) {
+        startCp = 0;
+        pvPut (startCp);
+      }
+    } state next_channel
   }
 
   state blocked {
     entry { 
       printf ("PMD active\n");
     }
+    when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
     when (!sPMDon) {
+      working = 0;
+      channel = 0;
       printf ("PMD not active\n");
     } state iddle
-  }
-
-  state copy_data {
-    entry {
-      printf("Entered copy_data channel=%d, sIndx=%d\n", channel, sIndx);
-//   x   pvGet(cChanSel, SYNC);
-//   x   if (cChanSel & (1 << channel)) {
-        pvGet(pmd_buf, SYNC);
-        printf("Returned form pvGet in copy_data\n");
-//   x   }
-    }
-//  x  when ((cChanSel & (1 << channel)) == 0) {} state next_channel
-    when (channel == sIndx) {
-    	for (i = 0; i < N; i++) pmds[channel][i] = pmd_buf[i];
-        pvPut(pmds[channel]);
-	startCp = 0;
-	pvPut (startCp, SYNC);
-        printf ("Copied buffer to pmds[%d]\n", channel);
-    } state next_channel
   }
 
   state next_channel {
@@ -103,19 +96,21 @@ ss volt_check {
         working = 0;
 	channel = 0;
       }
-      cIndx = channel;
-      pvPut(cIndx, SYNC);
-      printf("Set new channel %d\n", channel);
-      pvGet(cIndx);
+      if ((cSelChan & (1<<channel)) && working) {
+        cIndx = channel;
+      	pvPut(cIndx, SYNC);
+      	printf("Set new channel %d\n", channel);
+      	pvGet(cIndx);
+      	pvGet(cSelChan);
+      }
     }
-    when (pvConnectCount() != pvAssignCount()) {
-      working = 0;
-    } state init
-    when (sPMDon || (working == 0)) {
-      working = 0;
-    } state blocked
-// The delay is needed here, otherwice cRIO system hangs
-    when ((channel == cIndx) && (working != 0) && delay(0.2))  {
+    when (((cSelChan & (1<<channel)) == 0) && working) {
+      printf ("Channel %d skipped\n", channel);
+    } state iddle
+    when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
+    when (sPMDon || (working == 0)) { } state blocked
+// !!!!!!!!! The delay is needed here, otherwice cRIO system hangs !!!!!!!!!!!!
+    when ((channel == cIndx) && (working != 0) && delay(0.5))  {
       printf ("Going to get_buffer channel %d\n", cIndx);
     } state get_buffer
   }
@@ -127,14 +122,25 @@ ss volt_check {
       pvPut(cmdGet, SYNC);
       printf("Sent cmdGet for channel %d\n", channel);
    }
-    when (pvConnectCount() != pvAssignCount()) {
-      working = 0;
-    } state init
-    when (sPMDon || (working == 0)) {
-      working = 0;
-    } state blocked
+    when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
+    when (sPMDon) { } state blocked
     when ((channel == sIndx) && (cmdGet == 0) && (working != 0))  {
       printf ("Going to copy_data channel %d\n", sIndx);
     } state copy_data
   }
+
+  state copy_data {
+    entry {
+      printf("Entered copy_data channel=%d, sIndx=%d\n", channel, sIndx);
+      pvGet(pmd_buf, SYNC);
+      printf("Returned form pvGet in copy_data\n");
+    }
+    when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
+    when (channel == sIndx) {
+      for (i = 0; i < N; i++) pmds[channel][i] = pmd_buf[i];
+      pvPut(pmds[channel]);
+      printf ("Copied buffer to pmds[%d]\n", channel);
+    } state next_channel
+  }
+
 }
