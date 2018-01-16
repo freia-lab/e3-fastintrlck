@@ -6,10 +6,16 @@ int i, N=300000;
 int startCp;
 int sPMDon, sIndx, cIndx;
 int cmdGet;
+string seq_state;
 
-short working=0,  channel = 0;
+short working=0,  channel = 0, busy = 0, trigSrc = 0;
 short cSelChan;
+short adcMask_1[16], adcMask_2[16], adcMask_3[16], adcMask_4[16];
+short adcStat_1[16], adcStat_2[16], adcStat_3[16], adcStat_4[16];
 
+assign busy to "{p1}:PMD:sBusy";
+assign trigSrc to "{p1}:PMD:sTrigSrc";
+assign seq_state to "{p1}:PMD:sCopySeq";
 assign startCp to "{p1}:PMD:cStartCp";
 assign cSelChan to "{p1}:PMD:cSelChan";
 assign pmd_buf to "{p1}:PMD:sRdV";
@@ -33,6 +39,14 @@ assign sPMDon to "{p1}:PMD:sOn";
 assign sIndx to "{p1}:PMD:sChan";
 assign cIndx to "{p1}:PMD:cChan";
 assign cmdGet to "{p1}:PMD:cmdGet";
+assign adcMask_1 to "{p1}:ADC:cMask-1";
+assign adcStat_1 to "{p1}:ADC:sStatus-1";
+assign adcMask_2 to "{p1}:ADC:cMask-2";
+assign adcStat_2 to "{p1}:ADC:sStatus-2";
+assign adcMask_3 to "{p1}:ADC:cMask-3";
+assign adcStat_3 to "{p1}:ADC:sStatus-3";
+assign adcMask_4 to "{p1}:ADC:cMask-4";
+assign adcStat_4 to "{p1}:ADC:sStatus-4";
 
 monitor sIndx;
 monitor sPMDon;
@@ -45,6 +59,8 @@ ss cp_PMD {
     entry {
       working = 0;
       channel = 0;
+      sprintf (seq_state, "Init");
+      pvPut (seq_state);
     }
     when (pvConnectCount() == pvAssignCount()) {
       printf ("In state init - all pvs connected\n");
@@ -55,13 +71,22 @@ ss cp_PMD {
   }
 
   state connect_timeout {
-    when (delay (5)) {
+    entry {
+      sprintf (seq_state, "Connect time-out");
+      pvPut (seq_state);
+      busy = FALSE;
+      pvPut (busy);
+    }
+    when (pvConnectCount() == pvAssignCount()) {} state blocked
+    when (delay (3600)) {
       printf ("Leaving state connect_timeout\n");
     } state init
   }
 
   state iddle {
     entry { 
+      sprintf (seq_state, "Iddle");
+      pvPut (seq_state);
       printf ("Iddle...\n");
     }
     when (pvConnectCount() != pvAssignCount()) {} state connect_timeout
@@ -70,13 +95,47 @@ ss cp_PMD {
       if (working == 0) {
         startCp = 0;
         pvPut (startCp);
+     	busy = TRUE;
+      	pvPut (busy);
+	pvGet (adcMask_1);
+	pvGet (adcStat_1);
+	pvGet (adcMask_2);
+	pvGet (adcStat_2);
+	pvGet (adcMask_3);
+	pvGet (adcStat_3);
+	pvGet (adcMask_4);
+	pvGet (adcStat_4);
+	trigSrc = 0;
+	for (i=0; i < 16; i++) {
+	  if (adcMask_1[i] & adcStat_1[i]) {
+	    trigSrc = 1;
+	    break;
+	  }
+	  else if (adcMask_2[i] & adcStat_2[i]) {
+	    trigSrc = 2;
+ 	    break;
+	  }
+	  else if (adcMask_3[i] & adcStat_3[i]) {
+	    trigSrc = 3;
+	    break;
+	  }
+ 	  else if (adcMask_4[i] & adcStat_4[i]) {
+	     trigSrc = 4;
+	    break;
+	  }
+	}
+	pvPut (trigSrc);
       }
     } state next_channel
   }
 
   state blocked {
     entry { 
+      sprintf (seq_state, "Blocked");
+      pvPut (seq_state);
       printf ("PMD active\n");
+      busy = FALSE;
+      pvPut (busy);
     }
     when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
     when (!sPMDon) {
@@ -89,12 +148,15 @@ ss cp_PMD {
   state next_channel {
     entry {
       printf("Entered next_channel (%d)\n", channel);
-      if (working) channel++;
+      if (working)
+        channel++;
       if (channel < 16) {
         working = 1;
       } else {
         working = 0;
 	channel = 0;
+        busy = FALSE;
+        pvPut (busy);
       }
       if ((cSelChan & (1<<channel)) && working) {
         cIndx = channel;
@@ -102,6 +164,8 @@ ss cp_PMD {
       	printf("Set new channel %d\n", channel);
       	pvGet(cIndx);
       	pvGet(cSelChan);
+        sprintf (seq_state, "Select channel %d", channel);
+        pvPut (seq_state);
       }
     }
     when (((cSelChan & (1<<channel)) == 0) && working) {
@@ -109,7 +173,7 @@ ss cp_PMD {
     } state iddle
     when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
     when (sPMDon || (working == 0)) { } state blocked
-// !!!!!!!!! The delay is needed here, otherwice cRIO system hangs !!!!!!!!!!!!
+// !!!!!!!!! The delay is needed here, otherwise cRIO system hangs !!!!!!!!!!!!
     when ((channel == cIndx) && (working != 0) && delay(0.5))  {
       printf ("Going to get_buffer channel %d\n", cIndx);
     } state get_buffer
@@ -117,6 +181,8 @@ ss cp_PMD {
 
   state get_buffer {
     entry {
+      sprintf (seq_state, "Waiting for data...");
+      pvPut (seq_state);
       printf("Entered get_buffer (%d)\n", channel);
       cmdGet = 1;
       pvPut(cmdGet, SYNC);
@@ -131,6 +197,8 @@ ss cp_PMD {
 
   state copy_data {
     entry {
+      sprintf (seq_state, "Copying chan. %d", channel);
+      pvPut (seq_state);
       printf("Entered copy_data channel=%d, sIndx=%d\n", channel, sIndx);
       pvGet(pmd_buf, SYNC);
       printf("Returned form pvGet in copy_data\n");
