@@ -15,7 +15,7 @@
     <color name="IO Grid" red="215" green="215" blue="215" />
   </foreground_color>
   <grid_space>5</grid_space>
-  <height>970</height>
+  <height>1270</height>
   <macros>
     <include_parent_macros>true</include_parent_macros>
   </macros>
@@ -28,7 +28,7 @@
   <show_ruler>true</show_ruler>
   <snap_to_geometry>true</snap_to_geometry>
   <widget_type>Display</widget_type>
-  <width>1500</width>
+  <width>1485</width>
   <wuid>-14a921ec:134b2495e46:-7f53</wuid>
   <x>0</x>
   <y>0</y>
@@ -88,7 +88,7 @@
     <foreground_color>
       <color name="IO Foreground" red="0" green="0" blue="0" />
     </foreground_color>
-    <height>851</height>
+    <height>1150</height>
     <horizontal_tabs>true</horizontal_tabs>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -200,7 +200,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>814</height>
+      <height>1113</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -216,7 +216,7 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>false</visible>
+      <visible>true</visible>
       <widget_type>Grouping Container</widget_type>
       <width>1465</width>
       <wuid>6481069:1570e5abd2f:-7840</wuid>
@@ -240,7 +240,7 @@
           <color name="IO Foreground" red="0" green="0" blue="0" />
         </foreground_color>
         <group_name></group_name>
-        <height>814</height>
+        <height>1113</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
@@ -281,7 +281,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>814</height>
+      <height>1113</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -321,7 +321,7 @@
           <color name="IO Foreground" red="0" green="0" blue="0" />
         </foreground_color>
         <group_name></group_name>
-        <height>814</height>
+        <height>1113</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <N>1</N>
@@ -363,7 +363,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>814</height>
+      <height>1113</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -403,7 +403,7 @@
           <color name="IO Foreground" red="0" green="0" blue="0" />
         </foreground_color>
         <group_name></group_name>
-        <height>814</height>
+        <height>1113</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <N>2</N>
@@ -445,7 +445,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>814</height>
+      <height>1113</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -485,7 +485,7 @@
           <color name="IO Foreground" red="0" green="0" blue="0" />
         </foreground_color>
         <group_name></group_name>
-        <height>814</height>
+        <height>1113</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <N>3</N>
@@ -527,7 +527,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>814</height>
+      <height>1113</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -543,7 +543,7 @@
       <show_scrollbar>true</show_scrollbar>
       <tooltip></tooltip>
       <transparent>true</transparent>
-      <visible>true</visible>
+      <visible>false</visible>
       <widget_type>Grouping Container</widget_type>
       <width>1465</width>
       <wuid>6481069:1570e5abd2f:-783c</wuid>
@@ -567,7 +567,7 @@
           <color name="IO Foreground" red="0" green="0" blue="0" />
         </foreground_color>
         <group_name></group_name>
-        <height>814</height>
+        <height>1113</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
           <N>4</N>
@@ -609,7 +609,7 @@
       <foreground_color>
         <color red="192" green="192" blue="192" />
       </foreground_color>
-      <height>814</height>
+      <height>1113</height>
       <lock_children>false</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
@@ -649,7 +649,7 @@
           <color name="IO Foreground" red="0" green="0" blue="0" />
         </foreground_color>
         <group_name></group_name>
-        <height>814</height>
+        <height>1113</height>
         <macros>
           <include_parent_macros>true</include_parent_macros>
         </macros>
