@@ -15,13 +15,13 @@ record (mbbi, "$(P):PMD:sTrigSrc") {
   field(ZRVL, "0")
   field(ZRST, "Manual")
   field(ONVL, "1")
-  field(ONST, "Channel 1")
+  field(ONST, "Intk Chan 1")
   field(TWVL, "2")
-  field(TWST, "Channel 2")
+  field(TWST, "Intk Chan 2")
   field(THVL, "3")
-  field(THST, "Channel 3")
+  field(THST, "Intk Chan 3")
   field(FRVL, "4")
-  field(FRST, "Channel 4")
+  field(FRST, "Intk Chan 4")
 }
 
 record (state, "$(P):PMD:sCopySeq") {
@@ -32,4 +32,117 @@ record (mbboDirect, "$(P):PMD:cSelChan") {
   field(DESC, "PMD channels to copy")
   field(PINI,"YES")
   field(NOBT, "16")
+}
+
+record(calc, "$(P):Intlk:sHB-CNT") {
+   field (INPA, "$(P):Intlk:sHB")
+   field (INPB, "$(P):Intlk:sHB-CNT.LA")
+   field (CALC, "(A#B)?VAL+1:VAL")
+   field (SCAN, "1 second")
+}
+
+
+#record(bo, "$(P):Intlk:Reset") {
+#   field (HIGH, "0.5")
+#   field (ZNAM, "Iddle")
+#   field (ONAM, "CmdReset")
+#   field (PINI, "YES")
+#   field (OUT, "$(P):Intlk:sHB-CNT")
+#}
+
+record(calc, "$(P):Intlk:sAlive-1") {
+   field (INPA, "$(P):Intlk:sHB-CNT")
+   field (INPB, "$(P):Intlk:sAlive-1.LA")
+   field (INPC, "$(P):Intlk:cArm-1")
+   field (CALC, "((A#B)&&C)?1:0")
+   field (SCAN, "5 second")
+}
+record(calc, "$(P):Intlk:sAlive-2") {
+   field (INPA, "$(P):Intlk:sHB-CNT")
+   field (INPB, "$(P):Intlk:sAlive-2.LA")
+   field (INPC, "$(P):Intlk:cArm-2")
+   field (CALC, "((A#B)&&C)?1:0")
+   field (SCAN, "5 second")
+}
+record(calc, "$(P):Intlk:sAlive-3") {
+   field (INPA, "$(P):Intlk:sHB-CNT")
+   field (INPB, "$(P):Intlk:sAlive-3.LA")
+   field (INPC, "$(P):Intlk:cArm-3")
+   field (CALC, "((A#B)&&C)?1:0")
+   field (SCAN, "5 second")
+}
+record(calc, "$(P):Intlk:sAlive-4") {
+   field (INPA, "$(P):Intlk:sHB-CNT")
+   field (INPB, "$(P):Intlk:sAlive-4.LA")
+   field (INPC, "$(P):Intlk:cArm-4")
+   field (CALC, "((A#B)&&C)?1:0")
+   field (SCAN, "5 second")
+}
+
+record(aSub, "$(P):Intlk-trg:sTime1-aSub")
+{
+  field(DESC, "LabVIEW time stamp decoding")
+  field(INPA, "$(P):Intlk-trg:sTime-1 MSI")
+  field(FTA, "DOUBLE")
+  field(FTVA, "STRING")
+  field(OUTA, "$(P):Intlk-trg:sTimeStamp-1 MS")
+  field(FLNK, "$(P):Intlk-trg:sTimeStamp-1 PP")
+  field(SNAM, "myAsubProcess")
+  field(SCAN, "1 second")
+}
+
+record(stringin, "$(P):Intlk-trg:sTimeStamp-1")
+{
+  field(DESC, "Time stamp string")
+}
+
+record(aSub, "$(P):Intlk-trg:sTime2-aSub")
+{
+  field(DESC, "LabVIEW time stamp decoding")
+  field(INPA, "$(P):Intlk-trg:sTime-2 MSI")
+  field(FTA, "DOUBLE")
+  field(FTVA, "STRING")
+  field(OUTA, "$(P):Intlk-trg:sTimeStamp-2 MS")
+  field(FLNK, "$(P):Intlk-trg:sTimeStamp-2 PP")
+  field(SNAM, "myAsubProcess")
+  field(SCAN, "1 second")
+}
+
+record(stringin, "$(P):Intlk-trg:sTimeStamp-2")
+{
+  field(DESC, "Time stamp string")
+}
+
+record(aSub, "$(P):Intlk-trg:sTime3-aSub")
+{
+  field(DESC, "LabVIEW time stamp decoding")
+  field(INPA, "$(P):Intlk-trg:sTime-3 MSI")
+  field(FTA, "DOUBLE")
+  field(FTVA, "STRING")
+  field(OUTA, "$(P):Intlk-trg:sTimeStamp-3 MS")
+  field(FLNK, "$(P):Intlk-trg:sTimeStamp-3 PP")
+  field(SNAM, "myAsubProcess")
+  field(SCAN, "1 second")
+}
+
+record(stringin, "$(P):Intlk-trg:sTimeStamp-3")
+{
+  field(DESC, "Time stamp string")
+}
+
+record(aSub, "$(P):Intlk-trg:sTime4-aSub")
+{
+  field(DESC, "LabVIEW time stamp decoding")
+  field(INPA, "$(P):Intlk-trg:sTime-4 MSI")
+  field(FTA, "DOUBLE")
+  field(FTVA, "STRING")
+  field(OUTA, "$(P):Intlk-trg:sTimeStamp-4 MS")
+  field(FLNK, "$(P):Intlk-trg:sTimeStamp-4 PP")
+  field(SNAM, "myAsubProcess")
+  field(SCAN, "1 second")
+}
+
+record(stringin, "$(P):Intlk-trg:sTimeStamp-4")
+{
+  field(DESC, "Time stamp string")
 }

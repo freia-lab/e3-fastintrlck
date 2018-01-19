@@ -1,0 +1,33 @@
+# Test - extract data from the waveform
+
+record (subArray, "$(P):ADC-$(INDX):sRdV-raw") {
+   field (DESC, "Chan $(INDX) of $(P):ADC:sRdV")
+   field (DTYP, "Soft Channel")
+   field (SCAN, "1 second")
+   field (INP, "$(P):ADC:sRdV")
+   field (FTVL, "DOUBLE")
+   field (INDX, $(INDX))
+   field (LOPR, -10.0)
+   field (HOPR, 10.0)
+   field (PREC, 4)
+   field (MALM, 16)
+   field (FLNK, "$(P):ADC-$(INDX):sRdV-1")
+}
+
+record(calc, "$(P):ADC-$(INDX):sRdV-1") {
+   field (INPA, "$(P):ADC-$(INDX):sRdV-raw")
+   field (CALC, "1000*A")
+   field (FLNK, "$(NAME)")
+}
+
+record (ai, "$(NAME)") {
+   field (DESC, "$(P):ADC:sRdV[$(INDX)] in EGU")
+   field (EGU, "$(EGU)")
+   field (INP, "$(P):ADC-$(INDX):sRdV-1")
+   field (DTYP, "Raw Soft Channel")
+   field (LINR, "LINEAR")
+   field (LOPR, "$(LOPR)")
+   field (HOPR, "$(HOPR)")
+   field (EOFF, "$(EOFF)")
+   field (ESLO, "$(ESLO)")
+}
