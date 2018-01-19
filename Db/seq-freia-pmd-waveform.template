@@ -1,0 +1,10 @@
+record (waveform, $(P):PMD-$(ADC_CHAN)) {
+  field(FTVL, "FLOAT")
+  field(NELM, "300000")
+  field(EGU, "V")
+}
+record (waveform, $(P):PMD-$(ADC_CHAN):DEC) {
+  field(FTVL, "FLOAT")
+  field(NELM, "30000")
+  field(EGU, "V")
+}

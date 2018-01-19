@@ -1,0 +1,35 @@
+record (bo, "$(P):PMD:cStartCp") {
+  field(DESC, "Start PMD copy")
+  field(ZNAM, "Do nothing")
+  field(ONAM, "Copy PMD")
+}
+
+record (bi, "$(P):PMD:sBusy") {
+  field(DESC, "PMD system busy - copying data")
+  field(ZNAM, "Iddle")
+  field(ONAM, "Copying PMD...")
+}
+
+record (mbbi, "$(P):PMD:sTrigSrc") {
+  field(DESC, "Trigger source of the PMD")
+  field(ZRVL, "0")
+  field(ZRST, "Manual")
+  field(ONVL, "1")
+  field(ONST, "Channel 1")
+  field(TWVL, "2")
+  field(TWST, "Channel 2")
+  field(THVL, "3")
+  field(THST, "Channel 3")
+  field(FRVL, "4")
+  field(FRST, "Channel 4")
+}
+
+record (state, "$(P):PMD:sCopySeq") {
+  field(DESC, "PMD copy seq. state")
+}
+
+record (mbboDirect, "$(P):PMD:cSelChan") {
+  field(DESC, "PMD channels to copy")
+  field(PINI,"YES")
+  field(NOBT, "16")
+}

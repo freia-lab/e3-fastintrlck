@@ -2,7 +2,8 @@ program copy_PMD
 
 float pmd_buf[300000];
 float pmds [16][300000];
-int i, N=300000;
+float pmds_dec [16][30000];
+int i, N=300000, decim=10;
 int startCp;
 int sPMDon, sIndx, cIndx;
 int cmdGet;
@@ -35,6 +36,24 @@ assign pmds[12] to "{p1}:PMD-12";
 assign pmds[13] to "{p1}:PMD-13";
 assign pmds[14] to "{p1}:PMD-14";
 assign pmds[15] to "{p1}:PMD-15";
+
+assign pmds_dec[0] to "{p1}:PMD-0:DEC";
+assign pmds_dec[1] to "{p1}:PMD-1:DEC";
+assign pmds_dec[2] to "{p1}:PMD-2:DEC";
+assign pmds_dec[3] to "{p1}:PMD-3:DEC";
+assign pmds_dec[4] to "{p1}:PMD-4:DEC";
+assign pmds_dec[5] to "{p1}:PMD-5:DEC";
+assign pmds_dec[6] to "{p1}:PMD-6:DEC";
+assign pmds_dec[7] to "{p1}:PMD-7:DEC";
+assign pmds_dec[8] to "{p1}:PMD-8:DEC";
+assign pmds_dec[9] to "{p1}:PMD-9:DEC";
+assign pmds_dec[10] to "{p1}:PMD-10:DEC";
+assign pmds_dec[11] to "{p1}:PMD-11:DEC";
+assign pmds_dec[12] to "{p1}:PMD-12:DEC";
+assign pmds_dec[13] to "{p1}:PMD-13:DEC";
+assign pmds_dec[14] to "{p1}:PMD-14:DEC";
+assign pmds_dec[15] to "{p1}:PMD-15:DEC";
+
 assign sPMDon to "{p1}:PMD:sOn";
 assign sIndx to "{p1}:PMD:sChan";
 assign cIndx to "{p1}:PMD:cChan";
@@ -205,8 +224,12 @@ ss cp_PMD {
     }
     when (pvConnectCount() != pvAssignCount()) { } state connect_timeout
     when (channel == sIndx) {
-      for (i = 0; i < N; i++) pmds[channel][i] = pmd_buf[i];
+      for (i = 0; i < N; i++) { 
+        pmds[channel][i] = pmd_buf[i];
+	if ((i % decim) == 0) pmds_dec[channel][i/decim] = pmd_buf[i];
+      }
       pvPut(pmds[channel]);
+      pvPut(pmds_dec[channel]);
       printf ("Copied buffer to pmds[%d]\n", channel);
     } state next_channel
   }

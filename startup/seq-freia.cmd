@@ -1,5 +1,7 @@
 epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","seq:")
+dbLoadRecords("seq-freia-gen.db","P=$(P)")
 dbLoadRecords("seq-freia.db","P=$(P)")
+#dbLoadRecords("seq-freia.db")
 
 requireSnippet(seq-freia-preSaveRestore.cmd)
 
