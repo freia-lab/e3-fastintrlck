@@ -1,21 +1,7 @@
-# Test - extract data from the waveform
-
-record (subArray, "$(P):ADC-$(INDX):sRdV-raw") {
-   field (DESC, "Chan $(INDX) of $(P):ADC:sRdV")
-   field (DTYP, "Soft Channel")
-   field (SCAN, "1 second")
-   field (INP, "$(P):ADC:sRdV")
-   field (FTVL, "DOUBLE")
-   field (INDX, $(INDX))
-   field (LOPR, -10.0)
-   field (HOPR, 10.0)
-   field (PREC, 4)
-   field (MALM, 16)
-   field (FLNK, "$(P):ADC-$(INDX):sRdV-1")
-}
+# Extract data from the waveform
 
 record(calc, "$(P):ADC-$(INDX):sRdV-1") {
-   field (INPA, "$(P):ADC-$(INDX):sRdV-raw")
+   field (INPA, "$(P):ADC:sRdV-raw.[$(INDX)] CP MMS")
    field (CALC, "1000*A")
    field (FLNK, "$(NAME)")
 }

@@ -146,3 +146,20 @@ record(stringin, "$(P):Intlk-trg:sTimeStamp-4")
 {
   field(DESC, "Time stamp string")
 }
+
+# Extract data from cRIO to make it available for CA filtering
+# CA version used by cRIO is too old and doesn't support it.
+
+record (subArray, "$(P):ADC:sRdV-raw") {
+   field (DESC, "SubArray (copy) of $(P):ADC:sRdV")
+   field (DTYP, "Soft Channel")
+   field (SCAN, "1 second")
+   field (INP, "$(P):ADC:sRdV")
+   field (FTVL, "DOUBLE")
+   field (INDX, 0)
+   field (LOPR, -10.0)
+   field (HOPR, 10.0)
+   field (PREC, 4)
+   field (NELM, 16)
+   field (MALM, 16)
+}
