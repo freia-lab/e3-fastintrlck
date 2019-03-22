@@ -3460,7 +3460,8 @@ $(pv_value)</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Not used</tooltip>
+      <tooltip>Arc detector ArcDet07
+(not connected yet)</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3543,9 +3544,8 @@ LLRF system 1</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Not used
-Was Arc Detector's interlock
-from IPNO's system</tooltip>
+      <tooltip>Interlock from Lund's
+LLRF system 2</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3586,10 +3586,8 @@ from IPNO's system</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Not used
-Was Global Interlock from 
-IPNO's coupler conditioning
-system</tooltip>
+      <tooltip>Electron pickup 
+from the coupler 1</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3631,7 +3629,7 @@ system</tooltip>
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
       <tooltip>Electron pickup 
-from the coupler</tooltip>
+from the coupler 2</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
