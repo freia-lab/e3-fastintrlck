@@ -2184,27 +2184,40 @@ $(pv_value)</tooltip>
       <x>300</x>
       <y>76</y>
     </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-      <actions hook="false" hook_all="false" />
-      <auto_size>true</auto_size>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205" />
-      </background_color>
+    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+      <actions hook="false" hook_all="true">
+        <action type="OPEN_DISPLAY">
+          <path>Interlocks_fromPLC.opi</path>
+          <macros>
+            <include_parent_macros>true</include_parent_macros>
+            <P1>LLRF-Cntrl:SlowIntlk</P1>
+            <P2>HPRF-PwrCpl:WtrCIntlk</P2>
+            <P3>HPRF-Kly:WtrCIntlk</P3>
+          </macros>
+          <mode>6</mode>
+          <description>SHow details</description>
+        </action>
+      </actions>
+      <border_alarm_sensitive>true</border_alarm_sensitive>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <border_style>0</border_style>
+      <border_style>6</border_style>
       <border_width>2</border_width>
-      <enabled>false</enabled>
+      <enabled>true</enabled>
       <font>
-        <opifont.name fontName="Cantarell" height="13" style="1" pixels="false">Header 3</opifont.name>
+        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
       </font>
+      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92" />
+        <color name="IO Foreground" red="0" green="0" blue="0" />
       </foreground_color>
-      <height>23</height>
-      <horizontal_alignment>0</horizontal_alignment>
-      <name>Label Template_19</name>
+      <height>25</height>
+      <image></image>
+      <name>Action Button Template</name>
+      <push_action_index>0</push_action_index>
+      <pv_name></pv_name>
+      <pv_value />
       <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -2212,18 +2225,18 @@ $(pv_value)</tooltip>
         <keep_wh_ratio>false</keep_wh_ratio>
       </scale_options>
       <scripts />
-      <show_scrollbar>false</show_scrollbar>
+      <style>1</style>
       <text>?</text>
-      <tooltip>Not used</tooltip>
-      <transparent>true</transparent>
-      <vertical_alignment>1</vertical_alignment>
+      <toggle_button>false</toggle_button>
+      <tooltip>Interlock signal 
+from the PLC
+(LLRF-Cntrl:SlowIntlk)</tooltip>
       <visible>true</visible>
-      <widget_type>Label</widget_type>
-      <width>9</width>
-      <wrap_words>true</wrap_words>
-      <wuid>1f221406:15ad1f6ddf9:-6fdb</wuid>
-      <x>330</x>
-      <y>76</y>
+      <widget_type>Action Button</widget_type>
+      <width>25</width>
+      <wuid>6bc625c4:14f3be44842:-6634</wuid>
+      <x>321</x>
+      <y>75</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
@@ -2802,60 +2815,6 @@ $(pv_value)</tooltip>
         <x>16</x>
         <y>10</y>
       </widget>
-    </widget>
-    <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
-      <actions hook="false" hook_all="true">
-        <action type="OPEN_DISPLAY">
-          <path>Interlocks_fromPLC.opi</path>
-          <macros>
-            <include_parent_macros>true</include_parent_macros>
-            <P1>LLRF-Cntrl:SlowIntlk</P1>
-            <P2>HPRF-PwrCpl:WtrCIntlk</P2>
-            <P3>HPRF-Kly:WtrCIntlk</P3>
-          </macros>
-          <mode>6</mode>
-          <description>SHow details</description>
-        </action>
-      </actions>
-      <border_alarm_sensitive>true</border_alarm_sensitive>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215" />
-      </border_color>
-      <border_style>6</border_style>
-      <border_width>2</border_width>
-      <enabled>true</enabled>
-      <font>
-        <opifont.name fontName="arial" height="10" style="1" pixels="false">IO Input 1</opifont.name>
-      </font>
-      <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-      <foreground_color>
-        <color name="IO Foreground" red="0" green="0" blue="0" />
-      </foreground_color>
-      <height>25</height>
-      <image></image>
-      <name>Action Button Template</name>
-      <push_action_index>0</push_action_index>
-      <pv_name></pv_name>
-      <pv_value />
-      <rules />
-      <scale_options>
-        <width_scalable>true</width_scalable>
-        <height_scalable>true</height_scalable>
-        <keep_wh_ratio>false</keep_wh_ratio>
-      </scale_options>
-      <scripts />
-      <style>1</style>
-      <text>?</text>
-      <toggle_button>false</toggle_button>
-      <tooltip>Interlock signal 
-from the PLC
-(LLRF-Cntrl:SlowIntlk)</tooltip>
-      <visible>true</visible>
-      <widget_type>Action Button</widget_type>
-      <width>25</width>
-      <wuid>6bc625c4:14f3be44842:-6634</wuid>
-      <x>331</x>
-      <y>70</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
       <actions hook="false" hook_all="false" />
@@ -3460,8 +3419,7 @@ $(pv_value)</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Arc detector ArcDet07
-(not connected yet)</tooltip>
+      <tooltip>Arc detector ArcDet07</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3804,6 +3762,48 @@ Was Circulator''s (704 MHz) arc detector
       <wrap_words>true</wrap_words>
       <wuid>-283d9bd8:15aa990792a:-2cf9</wuid>
       <x>705</x>
+      <y>73</y>
+    </widget>
+    <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+      <actions hook="false" hook_all="false" />
+      <auto_size>true</auto_size>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205" />
+      </background_color>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215" />
+      </border_color>
+      <border_style>0</border_style>
+      <border_width>2</border_width>
+      <enabled>false</enabled>
+      <font>
+        <opifont.name fontName="Cantarell" height="13" style="1" pixels="false">Header 3</opifont.name>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92" />
+      </foreground_color>
+      <height>23</height>
+      <horizontal_alignment>0</horizontal_alignment>
+      <name>Label Template_24</name>
+      <rules />
+      <scale_options>
+        <width_scalable>true</width_scalable>
+        <height_scalable>true</height_scalable>
+        <keep_wh_ratio>false</keep_wh_ratio>
+      </scale_options>
+      <scripts />
+      <show_scrollbar>false</show_scrollbar>
+      <text>?</text>
+      <tooltip>Arc detector ArcDet08
+(not connected yet)</tooltip>
+      <transparent>true</transparent>
+      <vertical_alignment>1</vertical_alignment>
+      <visible>true</visible>
+      <widget_type>Label</widget_type>
+      <width>9</width>
+      <wrap_words>true</wrap_words>
+      <wuid>-3dc5dd3e:169a55d5155:-7878</wuid>
+      <x>337</x>
       <y>73</y>
     </widget>
   </widget>
