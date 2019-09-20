@@ -1907,7 +1907,7 @@ $(pv_value)</tooltip>
         <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>371</height>
-      <lock_children>false</lock_children>
+      <lock_children>true</lock_children>
       <macros>
         <include_parent_macros>true</include_parent_macros>
         <N>1</N>
@@ -2009,14 +2009,19 @@ $(pv_value)</tooltip>
         <show_scrollbar>false</show_scrollbar>
         <show_spinner>false</show_spinner>
         <spinner_width>40</spinner_width>
-        <tooltip>$(pv_name)
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored
+$(pv_name)
 $(pv_value)</tooltip>
         <vec>16</vec>
         <visible>true</visible>
         <widget_type>Array</widget_type>
         <width>36</width>
         <wuid>-7da51353:160ff086ca5:-64ae</wuid>
-        <x>1</x>
+        <x>5</x>
         <y>40</y>
         <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -2217,13 +2222,17 @@ $(pv_value)</tooltip>
         </scale_options>
         <scripts />
         <show_scrollbar>false</show_scrollbar>
-        <text>Mask</text>
-        <tooltip></tooltip>
+        <text>Unmask</text>
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored</tooltip>
         <transparent>true</transparent>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>32</width>
+        <width>48</width>
         <wrap_words>true</wrap_words>
         <wuid>-7da51353:160ff086ca5:-6534</wuid>
         <x>0</x>
@@ -2351,14 +2360,19 @@ $(pv_value)</tooltip>
         <show_scrollbar>false</show_scrollbar>
         <show_spinner>false</show_spinner>
         <spinner_width>40</spinner_width>
-        <tooltip>$(pv_name)
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored
+$(pv_name)
 $(pv_value)</tooltip>
         <vec>16</vec>
         <visible>true</visible>
         <widget_type>Array</widget_type>
         <width>36</width>
         <wuid>-7da51353:160ff086ca5:-574f</wuid>
-        <x>1</x>
+        <x>5</x>
         <y>40</y>
         <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -2600,13 +2614,17 @@ $(pv_value)</tooltip>
         </scale_options>
         <scripts />
         <show_scrollbar>false</show_scrollbar>
-        <text>Mask</text>
-        <tooltip></tooltip>
+        <text>Unmask</text>
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored</tooltip>
         <transparent>true</transparent>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>32</width>
+        <width>48</width>
         <wrap_words>true</wrap_words>
         <wuid>-7da51353:160ff086ca5:-5735</wuid>
         <x>0</x>
@@ -2765,13 +2783,17 @@ $(pv_value)</tooltip>
         </scale_options>
         <scripts />
         <show_scrollbar>false</show_scrollbar>
-        <text>Mask</text>
-        <tooltip></tooltip>
+        <text>Unmask</text>
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored</tooltip>
         <transparent>true</transparent>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>32</width>
+        <width>48</width>
         <wrap_words>true</wrap_words>
         <wuid>-7da51353:160ff086ca5:-572a</wuid>
         <x>0</x>
@@ -2857,14 +2879,19 @@ $(pv_value)</tooltip>
         <show_scrollbar>false</show_scrollbar>
         <show_spinner>false</show_spinner>
         <spinner_width>40</spinner_width>
-        <tooltip>$(pv_name)
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored
+$(pv_name)
 $(pv_value)</tooltip>
         <vec>16</vec>
         <visible>true</visible>
         <widget_type>Array</widget_type>
         <width>36</width>
         <wuid>-7da51353:160ff086ca5:-54ae</wuid>
-        <x>1</x>
+        <x>5</x>
         <y>40</y>
         <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
           <actions hook="false" hook_all="false" />
@@ -3148,13 +3175,17 @@ $(pv_value)</tooltip>
         </scale_options>
         <scripts />
         <show_scrollbar>false</show_scrollbar>
-        <text>Mask</text>
-        <tooltip></tooltip>
-        <transparent>true</transparent>
+        <text>Unmask</text>
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored</tooltip>
+        <transparent>false</transparent>
         <vertical_alignment>1</vertical_alignment>
         <visible>true</visible>
         <widget_type>Label</widget_type>
-        <width>32</width>
+        <width>48</width>
         <wrap_words>true</wrap_words>
         <wuid>-7da51353:160ff086ca5:-5755</wuid>
         <x>0</x>
@@ -3240,14 +3271,19 @@ $(pv_value)</tooltip>
         <show_scrollbar>false</show_scrollbar>
         <show_spinner>false</show_spinner>
         <spinner_width>40</spinner_width>
-        <tooltip>$(pv_name)
+        <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored
+$(pv_name)
 $(pv_value)</tooltip>
         <vec>16</vec>
         <visible>true</visible>
         <widget_type>Array</widget_type>
         <width>36</width>
         <wuid>-7da51353:160ff086ca5:-5489</wuid>
-        <x>1</x>
+        <x>5</x>
         <y>40</y>
         <widget typeId="org.csstudio.opibuilder.widgets.BoolButton" version="1.0.0">
           <actions hook="false" hook_all="false" />
