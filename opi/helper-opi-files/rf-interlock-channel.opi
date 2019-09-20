@@ -423,7 +423,12 @@ $(pv_value)</tooltip>
       <show_scrollbar>false</show_scrollbar>
       <show_spinner>false</show_spinner>
       <spinner_width>40</spinner_width>
-      <tooltip>$(pv_name)
+      <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored
+$(pv_name)
 $(pv_value)</tooltip>
       <vec>16</vec>
       <visible>true</visible>
@@ -804,16 +809,20 @@ $(pv_value)</tooltip>
       </scale_options>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
-      <text>Mask</text>
-      <tooltip></tooltip>
+      <text>Unmask</text>
+      <tooltip>When bit is checked (1) the corresponding
+input value is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input value is ignored</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
       <widget_type>Label</widget_type>
-      <width>32</width>
+      <width>48</width>
       <wrap_words>true</wrap_words>
       <wuid>778321cc:14b3b2aebfa:-8c5</wuid>
-      <x>325</x>
+      <x>320</x>
       <y>15</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -1981,7 +1990,12 @@ $(pv_value)</tooltip>
       <show_scrollbar>false</show_scrollbar>
       <show_spinner>false</show_spinner>
       <spinner_width>35</spinner_width>
-      <tooltip>$(pv_name)
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored
+$(pv_name)
 $(pv_value)</tooltip>
       <vec>8</vec>
       <visible>true</visible>
@@ -2175,7 +2189,11 @@ $(pv_value)</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>Unmask bits MOD4</text>
-      <tooltip></tooltip>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -2858,7 +2876,12 @@ Armed</text>
       <show_scrollbar>false</show_scrollbar>
       <show_spinner>false</show_spinner>
       <spinner_width>35</spinner_width>
-      <tooltip>$(pv_name)
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored
+$(pv_name)
 $(pv_value)</tooltip>
       <vec>8</vec>
       <visible>true</visible>
@@ -2945,7 +2968,11 @@ $(pv_value)</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>Unmask bits MOD3</text>
-      <tooltip></tooltip>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3135,7 +3162,11 @@ $(pv_value)</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>Unmask bits MOD5</text>
-      <tooltip></tooltip>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3185,7 +3216,12 @@ $(pv_value)</tooltip>
       <show_scrollbar>false</show_scrollbar>
       <show_spinner>false</show_spinner>
       <spinner_width>35</spinner_width>
-      <tooltip>$(pv_name)
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored
+$(pv_name)
 $(pv_value)</tooltip>
       <vec>8</vec>
       <visible>true</visible>
@@ -3876,9 +3912,7 @@ from the coupler 2</tooltip>
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Not used
-Was Circulator''s (704 MHz) arc detector 
-(CERN type)</tooltip>
+      <tooltip>Arc detector ArcDet09</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3919,7 +3953,7 @@ Was Circulator''s (704 MHz) arc detector
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Not used</tooltip>
+      <tooltip>Arc detector ArcDet10</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3960,7 +3994,7 @@ Was Circulator''s (704 MHz) arc detector
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Not used</tooltip>
+      <tooltip>Quench detector Cavity 1</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -3968,7 +4002,7 @@ Was Circulator''s (704 MHz) arc detector
       <width>9</width>
       <wrap_words>true</wrap_words>
       <wuid>-283d9bd8:15aa990792a:-2d00</wuid>
-      <x>675</x>
+      <x>677</x>
       <y>73</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -4001,7 +4035,7 @@ Was Circulator''s (704 MHz) arc detector
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Not used</tooltip>
+      <tooltip>Quench detector Cavity 2</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
@@ -4009,7 +4043,7 @@ Was Circulator''s (704 MHz) arc detector
       <width>9</width>
       <wrap_words>true</wrap_words>
       <wuid>-283d9bd8:15aa990792a:-2cf9</wuid>
-      <x>705</x>
+      <x>703</x>
       <y>73</y>
     </widget>
     <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
@@ -4042,8 +4076,7 @@ Was Circulator''s (704 MHz) arc detector
       <scripts />
       <show_scrollbar>false</show_scrollbar>
       <text>?</text>
-      <tooltip>Arc detector ArcDet08
-(not connected yet)</tooltip>
+      <tooltip>Arc detector ArcDet08</tooltip>
       <transparent>true</transparent>
       <vertical_alignment>1</vertical_alignment>
       <visible>true</visible>
