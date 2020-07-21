@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <macros>
+    <P>IntlkF-cRio1</P>
+  </macros>
+  <width>1500</width>
+  <height>1200</height>
+  <background_color>
+    <color name="IO Shape Fill" red="188" green="188" blue="188">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="group" version="2.0.0">
+    <name>Configuration settings</name>
+    <x>1135</x>
+    <y>450</y>
+    <width>309</width>
+    <height>155</height>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Input Template_1</name>
+      <pv_name>$(P):Intlk-cfg:cNPostT</pv_name>
+      <x>82</x>
+      <y>22</y>
+      <width>71</width>
+      <height>21</height>
+      <font>
+        <font name="IO Output 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO OutputPV Fg" red="255" green="255" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO OutputPV Bg" red="121" green="123" blue="126">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text># PostTrig</text>
+      <y>25</y>
+      <width>52</width>
+      <height>12</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>ADC Data rate [Hz]: </text>
+      <y>82</y>
+      <width>102</width>
+      <height>12</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>Set</text>
+      <x>109</x>
+      <width>17</width>
+      <height>12</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>Actual</text>
+      <x>176</x>
+      <width>32</width>
+      <height>12</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>PMD Buffer Length: </text>
+      <y>55</y>
+      <height>12</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):PMD:sNPostT</pv_name>
+      <x>169</x>
+      <y>25</y>
+      <width>60</width>
+      <height>16</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):PMD:sBufSize</pv_name>
+      <x>169</x>
+      <y>57</y>
+      <width>85</width>
+      <height>16</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):PMD:sDataRate</pv_name>
+      <x>169</x>
+      <y>84</y>
+      <width>85</width>
+      <height>16</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container</name>
+    <macros>
+      <X1>0</X1>
+      <X2>1</X2>
+      <X3>2</X3>
+      <X4>3</X4>
+    </macros>
+    <x>20</x>
+    <y>5</y>
+    <width>541</width>
+    <height>351</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="xyplot" version="2.0.0">
+      <name>XY Graph</name>
+      <width>540</width>
+      <height>350</height>
+      <foreground_color>
+        <color red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <title>Post-Mortem Decimated Data Channels $(X1) - $(X4)</title>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <actions>
+      </actions>
+      <x_axis>
+        <title>Point #</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>30000.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Amplitude [V]</title>
+          <autoscale>false</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>-10.0</minimum>
+          <maximum>10.0</maximum>
+          <show_grid>true</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name>$(traces[0].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X1):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="21" green="21" blue="196">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[1].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X2):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="242" green="26" blue="26">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[2].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X3):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="33" green="179" blue="33">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[3].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X4):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="0">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  PMD Controls  </name>
+    <x>1135</x>
+    <y>10</y>
+    <width>309</width>
+    <height>414</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="group" version="2.0.0">
+      <name>Grouping Container</name>
+      <x>10</x>
+      <y>40</y>
+      <width>30</width>
+      <height>321</height>
+      <style>3</style>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box</name>
+        <pv_name>$(P):PMD:cSelChan.B0</pv_name>
+        <label></label>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_15</name>
+        <pv_name>$(P):PMD:cSelChan.B1</pv_name>
+        <label></label>
+        <y>20</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_1</name>
+        <pv_name>$(P):PMD:cSelChan.B2</pv_name>
+        <label></label>
+        <y>40</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_2</name>
+        <pv_name>$(P):PMD:cSelChan.B3</pv_name>
+        <label></label>
+        <y>60</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_3</name>
+        <pv_name>$(P):PMD:cSelChan.B4</pv_name>
+        <label></label>
+        <y>80</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_4</name>
+        <pv_name>$(P):PMD:cSelChan.B5</pv_name>
+        <label></label>
+        <y>100</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_5</name>
+        <pv_name>$(P):PMD:cSelChan.B6</pv_name>
+        <label></label>
+        <y>120</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_6</name>
+        <pv_name>$(P):PMD:cSelChan.B7</pv_name>
+        <label></label>
+        <y>140</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_7</name>
+        <pv_name>$(P):PMD:cSelChan.B8</pv_name>
+        <label></label>
+        <y>160</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_8</name>
+        <pv_name>$(P):PMD:cSelChan.B9</pv_name>
+        <label></label>
+        <y>180</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_9</name>
+        <pv_name>$(P):PMD:cSelChan.BA</pv_name>
+        <label></label>
+        <y>200</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_10</name>
+        <pv_name>$(P):PMD:cSelChan.BB</pv_name>
+        <label></label>
+        <y>220</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_11</name>
+        <pv_name>$(P):PMD:cSelChan.BC</pv_name>
+        <label></label>
+        <y>240</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_12</name>
+        <pv_name>$(P):PMD:cSelChan.BD</pv_name>
+        <label></label>
+        <y>260</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box_1</name>
+        <pv_name>$(P):PMD:cSelChan.BE</pv_name>
+        <label></label>
+        <y>280</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box</name>
+        <pv_name>$(P):PMD:cSelChan.BF</pv_name>
+        <label></label>
+        <y>300</y>
+        <width>18</width>
+        <height>18</height>
+        <foreground_color>
+          <color red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P):PMD:cmdTrig</pv_name>
+      <text>Trigger
+PM Dump</text>
+      <x>100</x>
+      <y>295</y>
+      <width>112</width>
+      <height>52</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_1</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P):PMD:cmdOn</pv_name>
+      <text>Activate PMD</text>
+      <x>65</x>
+      <y>58</y>
+      <width>161</width>
+      <height>38</height>
+      <font>
+        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED Template</name>
+      <pv_name>$(P):PMD:sOn</pv_name>
+      <bit>0</bit>
+      <x>67</x>
+      <y>22</y>
+      <width>157</width>
+      <height>35</height>
+      <off_label>PMD OFF</off_label>
+      <off_color>
+        <color name="IO Default" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>PMD ON</on_label>
+      <on_color>
+        <color name="IO OK" red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>$(P):PMD:sBufSize</pv_name>
+      <x>152</x>
+      <y>115</y>
+      <width>102</width>
+      <height>22</height>
+      <foreground_color>
+        <color name="IO InputPV Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO InputPV Bg" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Action Button Template_2</name>
+      <pv_name>$(P):PMD:cStartCp</pv_name>
+      <x>75</x>
+      <y>250</y>
+      <width>162</width>
+      <font>
+        <font family="Sans" style="BOLD" size="8.910891089108912">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Foreground" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>$(P):PMD:sTrigSrc</pv_name>
+      <x>150</x>
+      <y>145</y>
+      <width>106</width>
+      <height>26</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <tooltip>PMD Trigger Source
+of the last saved data
+$(pv_name)
+$(pv_value)</tooltip>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>$(P):PMD:sBusy</pv_name>
+      <x>77</x>
+      <y>207</y>
+      <width>158</width>
+      <height>27</height>
+      <off_label>Idle</off_label>
+      <off_color>
+        <color red="0" green="100" blue="0">
+        </color>
+      </off_color>
+      <on_label>Copying...</on_label>
+      <on_color>
+        <color red="0" green="255" blue="0">
+        </color>
+      </on_color>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <line_color>
+        <color red="150" green="150" blue="150">
+        </color>
+      </line_color>
+      <square>true</square>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>$(P):PMD:sCopySeq</pv_name>
+      <x>45</x>
+      <y>180</y>
+      <width>211</width>
+      <height>25</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text> Channels
+ to copy</text>
+      <width>57</width>
+      <height>41</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_1</name>
+      <text>Trig. Source:</text>
+      <x>45</x>
+      <y>148</y>
+      <width>64</width>
+      <height>12</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_5</name>
+      <text># Valid data: </text>
+      <x>45</x>
+      <y>116</y>
+      <width>69</width>
+      <height>13</height>
+      <font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="IO Text Fg" red="0" green="32" blue="92">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_142</name>
+    <text>Channel Data: Display</text>
+    <x>305</x>
+    <y>725</y>
+    <width>200</width>
+    <height>25</height>
+    <font>
+      <font family="Sans" style="BOLD" size="11.881188118811881">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="IO Label" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="combo" version="2.0.0">
+    <name>Combo</name>
+    <pv_name>loc://PMDChannel</pv_name>
+    <x>459</x>
+    <y>719</y>
+    <width>112</width>
+    <height>38</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <items>
+      <item>NONE</item>
+      <item>PMD-0</item>
+      <item>PMD-1</item>
+      <item>PMD-2</item>
+      <item>PMD-3</item>
+      <item>PMD-4</item>
+      <item>PMD-5</item>
+      <item>PMD-6</item>
+      <item>PMD-7</item>
+      <item>PMD-8</item>
+      <item>PMD-9</item>
+      <item>PMD-10</item>
+      <item>PMD-11</item>
+      <item>PMD-12</item>
+      <item>PMD-13</item>
+      <item>PMD-14</item>
+      <item>PMD-15</item>
+    </items>
+    <items_from_pv>false</items_from_pv>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update</name>
+    <pv_name>loc://PMDChannel</pv_name>
+    <x>590</x>
+    <y>725</y>
+    <width>106</width>
+    <height>26</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>linking_container</name>
+    <file>PMD-graph.opi</file>
+    <x>20</x>
+    <y>760</y>
+    <width>1093</width>
+    <height>353</height>
+    <actions>
+    </actions>
+    <rules>
+      <rule name="ClearOPIRule" prop_id="opi_file" out_exp="false">
+        <exp bool_exp="false">
+          <value>opi_file?</value>
+        </exp>
+        <exp bool_exp="true">
+          <value>opi_file?</value>
+        </exp>
+        <pv_name>loc://PMDChannel</pv_name>
+      </rule>
+      <rule name="SetOPIRule" prop_id="opi_file" out_exp="false">
+        <exp bool_exp="true">
+          <value>PMD-graph.opi</value>
+        </exp>
+        <pv_name>loc://PMDChannel</pv_name>
+      </rule>
+    </rules>
+    <scripts>
+      <script file="../Scripts/Channel2Macro.js">
+        <pv_name>loc://PMDChannel</pv_name>
+      </script>
+    </scripts>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_5</name>
+    <macros>
+      <X1>4</X1>
+      <X2>5</X2>
+      <X3>6</X3>
+      <X4>7</X4>
+    </macros>
+    <x>570</x>
+    <y>5</y>
+    <width>541</width>
+    <height>351</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="xyplot" version="2.0.0">
+      <name>XY Graph</name>
+      <width>540</width>
+      <height>350</height>
+      <foreground_color>
+        <color red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <title>Post-Mortem Decimated Data Channels $(X1) - $(X4)</title>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <actions>
+      </actions>
+      <x_axis>
+        <title>Point #</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>30000.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Amplitude [V]</title>
+          <autoscale>false</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>-10.0</minimum>
+          <maximum>10.0</maximum>
+          <show_grid>true</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name>$(traces[0].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X1):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="21" green="21" blue="196">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[1].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X2):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="242" green="26" blue="26">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[2].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X3):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="33" green="179" blue="33">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[3].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X4):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="0">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_6</name>
+    <macros>
+      <X1>8</X1>
+      <X2>9</X2>
+      <X3>10</X3>
+      <X4>11</X4>
+    </macros>
+    <x>20</x>
+    <y>365</y>
+    <width>541</width>
+    <height>351</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="xyplot" version="2.0.0">
+      <name>XY Graph</name>
+      <width>540</width>
+      <height>350</height>
+      <foreground_color>
+        <color red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <title>Post-Mortem Decimated Data Channels $(X1) - $(X4)</title>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <actions>
+      </actions>
+      <x_axis>
+        <title>Point #</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>30000.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Amplitude [V]</title>
+          <autoscale>false</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>-10.0</minimum>
+          <maximum>10.0</maximum>
+          <show_grid>true</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name>$(traces[0].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X1):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="21" green="21" blue="196">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[1].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X2):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="242" green="26" blue="26">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[2].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X3):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="33" green="179" blue="33">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[3].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X4):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="0">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Grouping Container_7</name>
+    <macros>
+      <X1>12</X1>
+      <X2>13</X2>
+      <X3>14</X3>
+      <X4>15</X4>
+    </macros>
+    <x>570</x>
+    <y>365</y>
+    <width>541</width>
+    <height>351</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <widget type="xyplot" version="2.0.0">
+      <name>XY Graph</name>
+      <width>540</width>
+      <height>350</height>
+      <foreground_color>
+        <color red="0" green="0" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <title>Post-Mortem Decimated Data Channels $(X1) - $(X4)</title>
+      <title_font>
+        <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </title_font>
+      <actions>
+      </actions>
+      <x_axis>
+        <title>Point #</title>
+        <autoscale>false</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>0.0</minimum>
+        <maximum>30000.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </x_axis>
+      <y_axes>
+        <y_axis>
+          <title>Amplitude [V]</title>
+          <autoscale>false</autoscale>
+          <log_scale>false</log_scale>
+          <minimum>-10.0</minimum>
+          <maximum>10.0</maximum>
+          <show_grid>true</show_grid>
+          <title_font>
+            <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+            </font>
+          </title_font>
+          <scale_font>
+            <font name="Default" family="Source Sans Pro" style="REGULAR" size="16.0">
+            </font>
+          </scale_font>
+          <visible>true</visible>
+        </y_axis>
+      </y_axes>
+      <traces>
+        <trace>
+          <name>$(traces[0].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X1):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="21" green="21" blue="196">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[1].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X2):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="242" green="26" blue="26">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[2].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X3):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="33" green="179" blue="33">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+        <trace>
+          <name>$(traces[3].y_pv)</name>
+          <x_pv></x_pv>
+          <y_pv>$(P):PMD-$(X4):DEC</y_pv>
+          <err_pv></err_pv>
+          <axis>0</axis>
+          <trace_type>1</trace_type>
+          <color>
+            <color red="0" green="0" blue="0">
+            </color>
+          </color>
+          <line_width>1</line_width>
+          <point_type>2</point_type>
+          <point_size>4</point_size>
+          <visible>true</visible>
+        </trace>
+      </traces>
+    </widget>
+  </widget>
+</display>

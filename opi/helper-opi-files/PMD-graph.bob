@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <width>1100</width>
+  <height>450</height>
+  <background_color>
+    <color red="240" green="240" blue="240">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="xyplot" version="2.0.0">
+    <name>channel_graph</name>
+    <width>1090</width>
+    <height>350</height>
+    <foreground_color>
+      <color name="IO Foreground" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <title>$(Channel2Macro)</title>
+    <title_font>
+      <font name="IO SubTitle" family="arial" style="BOLD" size="11.881188118811881">
+      </font>
+    </title_font>
+    <show_toolbar>true</show_toolbar>
+    <show_legend>false</show_legend>
+    <actions>
+    </actions>
+    <tooltip></tooltip>
+    <x_axis>
+      <title>ADC Samples</title>
+      <autoscale>true</autoscale>
+      <log_scale>false</log_scale>
+      <minimum>0.0</minimum>
+      <maximum>300000.0</maximum>
+      <show_grid>true</show_grid>
+      <title_font>
+        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </title_font>
+      <scale_font>
+        <font name="IO Scale 1" family="arial" style="REGULAR" size="9.900990099009901">
+        </font>
+      </scale_font>
+      <visible>true</visible>
+    </x_axis>
+    <y_axes>
+      <y_axis>
+        <title></title>
+        <autoscale>true</autoscale>
+        <log_scale>false</log_scale>
+        <minimum>-10.0</minimum>
+        <maximum>10.0</maximum>
+        <show_grid>true</show_grid>
+        <title_font>
+          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </title_font>
+        <scale_font>
+          <font name="IO Scale 1" family="arial" style="REGULAR" size="9.900990099009901">
+          </font>
+        </scale_font>
+        <visible>true</visible>
+      </y_axis>
+    </y_axes>
+    <traces>
+      <trace>
+        <name>signal_trace</name>
+        <x_pv></x_pv>
+        <y_pv>$(P):$(Channel2Macro)</y_pv>
+        <err_pv></err_pv>
+        <axis>0</axis>
+        <trace_type>1</trace_type>
+        <color>
+          <color name="IO Trace 1" red="79" green="129" blue="189">
+          </color>
+        </color>
+        <line_width>1</line_width>
+        <point_type>2</point_type>
+        <point_size>1</point_size>
+        <visible>true</visible>
+      </trace>
+    </traces>
+  </widget>
+</display>
