@@ -8,21 +8,26 @@
   </background_color>
   <actions>
   </actions>
+  <grid_visible>false</grid_visible>
   <widget type="xyplot" version="2.0.0">
     <name>channel_graph</name>
     <width>1090</width>
     <height>350</height>
     <foreground_color>
-      <color name="IO Foreground" red="0" green="0" blue="0">
+      <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
-      <color name="IO InputPV Bg" red="255" green="255" blue="255">
+      <color name="WHITE" red="255" green="255" blue="255">
       </color>
     </background_color>
+    <grid_color>
+      <color name="GRAY" red="169" green="169" blue="169">
+      </color>
+    </grid_color>
     <title>$(Channel2Macro)</title>
     <title_font>
-      <font name="IO SubTitle" family="arial" style="BOLD" size="11.881188118811881">
+      <font family="Source Sans Pro" style="REGULAR" size="16.0">
       </font>
     </title_font>
     <show_toolbar>true</show_toolbar>
@@ -35,14 +40,14 @@
       <autoscale>true</autoscale>
       <log_scale>false</log_scale>
       <minimum>0.0</minimum>
-      <maximum>300000.0</maximum>
+      <maximum>10.0</maximum>
       <show_grid>true</show_grid>
       <title_font>
-        <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+        <font family="Source Sans Pro" style="REGULAR" size="16.0">
         </font>
       </title_font>
       <scale_font>
-        <font name="IO Scale 1" family="arial" style="REGULAR" size="9.900990099009901">
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
         </font>
       </scale_font>
       <visible>true</visible>
@@ -56,11 +61,11 @@
         <maximum>10.0</maximum>
         <show_grid>true</show_grid>
         <title_font>
-          <font name="IO Normal" family="arial" style="REGULAR" size="9.900990099009901">
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
         </title_font>
         <scale_font>
-          <font name="IO Scale 1" family="arial" style="REGULAR" size="9.900990099009901">
+          <font family="Source Sans Pro" style="REGULAR" size="12.0">
           </font>
         </scale_font>
         <visible>true</visible>
