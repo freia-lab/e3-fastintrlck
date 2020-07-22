@@ -1509,10 +1509,9 @@ $(pv_value)</tooltip>
           </color>
         </foreground_color>
         <background_color>
-          <color name="WHITE" red="255" green="255" blue="255">
+          <color name="BACKGROUND" red="220" green="225" blue="221">
           </color>
         </background_color>
-        <transparent>false</transparent>
         <vertical_alignment>1</vertical_alignment>
         <actions>
         </actions>
