@@ -36,7 +36,7 @@
       <x>8</x>
       <y>45</y>
       <width>70</width>
-      <height>326</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -80,7 +80,7 @@
       <x>100</x>
       <y>45</y>
       <width>70</width>
-      <height>324</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -94,7 +94,7 @@
       <widget type="textentry" version="3.0.0">
         <name>Text Input Template</name>
         <width>50</width>
-        <height>16</height>
+        <height>18</height>
         <foreground_color>
           <color name="BLACK" red="0" green="0" blue="0">
           </color>
@@ -120,7 +120,7 @@
       <x>180</x>
       <y>45</y>
       <width>70</width>
-      <height>324</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -134,7 +134,7 @@
       <widget type="textentry" version="3.0.0">
         <name>Text Input Template</name>
         <width>50</width>
-        <height>16</height>
+        <height>18</height>
         <foreground_color>
           <color name="BLACK" red="0" green="0" blue="0">
           </color>
@@ -254,10 +254,10 @@
       </actions>
       <widget type="group" version="2.0.0">
         <name>Grouping Container</name>
-        <x>20</x>
-        <y>40</y>
-        <width>32</width>
-        <height>321</height>
+        <x>16</x>
+        <y>35</y>
+        <width>28</width>
+        <height>312</height>
         <style>3</style>
         <foreground_color>
           <color red="0" green="128" blue="255">
@@ -273,13 +273,13 @@
           <name>Check Box</name>
           <pv_name>$(P):PMD:cSelChan.B0</pv_name>
           <label></label>
-          <width>18</width>
-          <height>18</height>
+          <y>2</y>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -288,13 +288,12 @@
           <pv_name>$(P):PMD:cSelChan.B1</pv_name>
           <label></label>
           <y>20</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -303,13 +302,12 @@
           <pv_name>$(P):PMD:cSelChan.B2</pv_name>
           <label></label>
           <y>40</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -318,13 +316,12 @@
           <pv_name>$(P):PMD:cSelChan.B3</pv_name>
           <label></label>
           <y>60</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -333,13 +330,12 @@
           <pv_name>$(P):PMD:cSelChan.B4</pv_name>
           <label></label>
           <y>80</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -348,13 +344,12 @@
           <pv_name>$(P):PMD:cSelChan.B5</pv_name>
           <label></label>
           <y>100</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -363,13 +358,12 @@
           <pv_name>$(P):PMD:cSelChan.B6</pv_name>
           <label></label>
           <y>120</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -378,13 +372,12 @@
           <pv_name>$(P):PMD:cSelChan.B7</pv_name>
           <label></label>
           <y>140</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -393,13 +386,12 @@
           <pv_name>$(P):PMD:cSelChan.B8</pv_name>
           <label></label>
           <y>160</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -408,13 +400,12 @@
           <pv_name>$(P):PMD:cSelChan.B9</pv_name>
           <label></label>
           <y>180</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -423,13 +414,12 @@
           <pv_name>$(P):PMD:cSelChan.BA</pv_name>
           <label></label>
           <y>200</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -438,13 +428,12 @@
           <pv_name>$(P):PMD:cSelChan.BB</pv_name>
           <label></label>
           <y>220</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -453,13 +442,12 @@
           <pv_name>$(P):PMD:cSelChan.BC</pv_name>
           <label></label>
           <y>240</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -468,13 +456,12 @@
           <pv_name>$(P):PMD:cSelChan.BD</pv_name>
           <label></label>
           <y>260</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -483,13 +470,12 @@
           <pv_name>$(P):PMD:cSelChan.BE</pv_name>
           <label></label>
           <y>280</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -498,13 +484,12 @@
           <pv_name>$(P):PMD:cSelChan.BF</pv_name>
           <label></label>
           <y>300</y>
-          <width>18</width>
-          <height>18</height>
+          <width>16</width>
+          <height>16</height>
           <foreground_color>
             <color red="0" green="0" blue="0">
             </color>
           </foreground_color>
-          <auto_size>true</auto_size>
           <actions>
           </actions>
         </widget>
@@ -878,7 +863,7 @@ $(pv_value)</tooltip>
         <x>5</x>
         <y>40</y>
         <width>48</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -900,7 +885,7 @@ $(pv_value)</tooltip>
           <name>Boolean Button Template</name>
           <bit>-1</bit>
           <width>28</width>
-          <height>20</height>
+          <height>18</height>
           <off_label></off_label>
           <off_color>
             <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
@@ -931,7 +916,7 @@ $(pv_value)</tooltip>
         <x>61</x>
         <y>40</y>
         <width>46</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -945,6 +930,7 @@ $(pv_value)</tooltip>
         <widget type="led" version="2.0.0">
           <name>LED Template</name>
           <width>26</width>
+          <height>18</height>
           <off_label>OK</off_label>
           <off_color>
             <color name="LED-GREEN-ON" red="70" green="255" blue="70">
@@ -1062,7 +1048,7 @@ When bit is unchecked (0) the corresponding
         <x>5</x>
         <y>40</y>
         <width>48</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -1084,7 +1070,7 @@ $(pv_value)</tooltip>
           <name>Boolean Button Template</name>
           <bit>-1</bit>
           <width>28</width>
-          <height>20</height>
+          <height>18</height>
           <off_label></off_label>
           <off_color>
             <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
@@ -1115,7 +1101,7 @@ $(pv_value)</tooltip>
         <x>61</x>
         <y>40</y>
         <width>46</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -1129,6 +1115,7 @@ $(pv_value)</tooltip>
         <widget type="led" version="2.0.0">
           <name>LED Template</name>
           <width>26</width>
+          <height>18</height>
           <off_label>OK</off_label>
           <off_color>
             <color name="LED-GREEN-ON" red="70" green="255" blue="70">
@@ -1360,7 +1347,7 @@ When bit is unchecked (0) the corresponding
         <x>5</x>
         <y>40</y>
         <width>48</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -1382,7 +1369,7 @@ $(pv_value)</tooltip>
           <name>Boolean Button Template</name>
           <bit>-1</bit>
           <width>28</width>
-          <height>20</height>
+          <height>18</height>
           <off_label></off_label>
           <off_color>
             <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
@@ -1413,7 +1400,7 @@ $(pv_value)</tooltip>
         <x>61</x>
         <y>40</y>
         <width>46</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -1427,6 +1414,7 @@ $(pv_value)</tooltip>
         <widget type="led" version="2.0.0">
           <name>LED Template_1</name>
           <width>26</width>
+          <height>18</height>
           <off_label>OK</off_label>
           <off_color>
             <color name="LED-GREEN-ON" red="70" green="255" blue="70">
@@ -1572,7 +1560,7 @@ When bit is unchecked (0) the corresponding
         <x>5</x>
         <y>40</y>
         <width>48</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -1594,7 +1582,7 @@ $(pv_value)</tooltip>
           <name>Boolean Button Template</name>
           <bit>-1</bit>
           <width>28</width>
-          <height>20</height>
+          <height>18</height>
           <off_label></off_label>
           <off_color>
             <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
@@ -1625,7 +1613,7 @@ $(pv_value)</tooltip>
         <x>61</x>
         <y>40</y>
         <width>46</width>
-        <height>320</height>
+        <height>308</height>
         <foreground_color>
           <color red="0" green="0" blue="0">
           </color>
@@ -1639,6 +1627,7 @@ $(pv_value)</tooltip>
         <widget type="led" version="2.0.0">
           <name>LED Template</name>
           <width>26</width>
+          <height>18</height>
           <off_label>OK</off_label>
           <off_color>
             <color name="LED-GREEN-ON" red="70" green="255" blue="70">
@@ -1673,7 +1662,7 @@ $(pv_value)</tooltip>
       <name>Label Template_5</name>
       <text>?</text>
       <x>80</x>
-      <y>45</y>
+      <y>48</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -1702,7 +1691,7 @@ $(pv_value)</tooltip>
       <name>Label Template_6</name>
       <text>?</text>
       <x>80</x>
-      <y>67</y>
+      <y>68</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -1731,7 +1720,7 @@ $(pv_value)</tooltip>
       <name>Label Template_7</name>
       <text>?</text>
       <x>80</x>
-      <y>89</y>
+      <y>88</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -1760,7 +1749,7 @@ $(pv_value)</tooltip>
       <name>Label Template_8</name>
       <text>?</text>
       <x>80</x>
-      <y>108</y>
+      <y>106</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -1789,7 +1778,7 @@ $(pv_value)</tooltip>
       <name>Label Template_9</name>
       <text>?</text>
       <x>80</x>
-      <y>128</y>
+      <y>124</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -1819,7 +1808,7 @@ $(pv_value)</tooltip>
       <name>Label Template_10</name>
       <text>?</text>
       <x>80</x>
-      <y>148</y>
+      <y>142</y>
       <width>8</width>
       <height>24</height>
       <font>

@@ -14,8 +14,8 @@
   <grid_visible>false</grid_visible>
   <widget type="group" version="2.0.0">
     <name>Analog Inputs [V]</name>
-    <x>140</x>
-    <y>352</y>
+    <x>161</x>
+    <y>390</y>
     <width>546</width>
     <height>391</height>
     <style>1</style>
@@ -36,7 +36,7 @@
       <x>17</x>
       <y>32</y>
       <width>70</width>
-      <height>326</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -80,7 +80,7 @@
       <x>140</x>
       <y>32</y>
       <width>70</width>
-      <height>324</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -94,7 +94,7 @@
       <widget type="textentry" version="3.0.0">
         <name>Text Input Template</name>
         <width>50</width>
-        <height>16</height>
+        <height>18</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -124,7 +124,7 @@
       <x>224</x>
       <y>32</y>
       <width>70</width>
-      <height>324</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -138,7 +138,7 @@
       <widget type="textentry" version="3.0.0">
         <name>Text Input Template</name>
         <width>50</width>
-        <height>16</height>
+        <height>18</height>
         <font>
           <font family="Source Sans Pro" style="REGULAR" size="14.0">
           </font>
@@ -153,6 +153,7 @@
         </background_color>
         <actions>
         </actions>
+        <tooltip></tooltip>
         <border_alarm_sensitive>false</border_alarm_sensitive>
         <border_width>1</border_width>
         <border_color>
@@ -167,7 +168,7 @@
       <x>319</x>
       <y>32</y>
       <width>46</width>
-      <height>320</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -189,7 +190,7 @@ $(pv_value)</tooltip>
         <name>Boolean Button Template</name>
         <bit>-1</bit>
         <width>26</width>
-        <height>20</height>
+        <height>18</height>
         <off_label></off_label>
         <off_color>
           <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
@@ -224,7 +225,7 @@ $(pv_value)</tooltip>
       <x>382</x>
       <y>32</y>
       <width>46</width>
-      <height>320</height>
+      <height>308</height>
       <foreground_color>
         <color red="0" green="0" blue="0">
         </color>
@@ -238,6 +239,7 @@ $(pv_value)</tooltip>
       <widget type="led" version="2.0.0">
         <name>LED Template</name>
         <width>26</width>
+        <height>18</height>
         <off_label>OK</off_label>
         <off_color>
           <color name="LED-GREEN-ON" red="70" green="255" blue="70">
@@ -279,7 +281,7 @@ $(pv_value)</tooltip>
       <text>Trigger
 PM Dump</text>
       <x>453</x>
-      <y>303</y>
+      <y>285</y>
       <width>80</width>
       <height>53</height>
       <font>
@@ -414,7 +416,7 @@ When bit is unchecked (0) the corresponding
       <x>379</x>
       <y>14</y>
       <width>53</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -752,9 +754,9 @@ When bit is unchecked (0) the corresponding
   </widget>
   <widget type="xyplot" version="2.0.0">
     <name>XY Graph Template</name>
-    <x>700</x>
-    <y>350</y>
-    <width>306</width>
+    <x>737</x>
+    <y>389</y>
+    <width>323</width>
     <height>391</height>
     <foreground_color>
       <color name="BLACK" red="0" green="0" blue="0">
@@ -838,7 +840,7 @@ When bit is unchecked (0) the corresponding
       <PA>HPRF-Distr</PA>
     </macros>
     <x>15</x>
-    <y>370</y>
+    <y>376</y>
     <width>119</width>
     <height>240</height>
     <style>1</style>
@@ -1018,10 +1020,10 @@ When bit is unchecked (0) the corresponding
   </widget>
   <widget type="group" version="2.0.0">
     <name>Digital Inputs</name>
-    <x>141</x>
-    <y>210</y>
-    <width>724</width>
-    <height>138</height>
+    <x>684</x>
+    <y>79</y>
+    <width>250</width>
+    <height>297</height>
     <style>1</style>
     <foreground_color>
       <color red="0" green="128" blue="255">
@@ -1035,87 +1037,14 @@ When bit is unchecked (0) the corresponding
     <actions>
     </actions>
     <widget type="label" version="2.0.0">
-      <name>Label Template_2</name>
-      <text>Details</text>
-      <x>79</x>
-      <y>90</y>
-      <width>41</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array</name>
-      <pv_name>$(P):DIN-2:sStatus-$(N)</pv_name>
-      <x>137</x>
-      <y>50</y>
-      <width>206</width>
-      <height>45</height>
-      <foreground_color>
-        <color name="Major" red="255" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="led" version="2.0.0">
-        <name>LED Template</name>
-        <bit>0</bit>
-        <width>186</width>
-        <height>25</height>
-        <off_label>OK</off_label>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color red="150" green="150" blue="150">
-          </color>
-        </line_color>
-        <square>true</square>
-        <actions>
-        </actions>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
       <name>Label Template_3</name>
-      <text>Unmask bits MOD4</text>
-      <x>8</x>
-      <y>18</y>
-      <width>111</width>
-      <height>19</height>
+      <text>Unmask</text>
+      <x>9</x>
+      <y>3</y>
+      <width>45</width>
+      <height>17</height>
       <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
         </font>
       </font>
       <foreground_color>
@@ -1141,244 +1070,430 @@ When bit is unchecked (0) the corresponding
       </border_color>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>Label Template_12</name>
-      <text>?</text>
-      <x>146</x>
-      <y>92</y>
-      <width>8</width>
-      <height>24</height>
+      <name>Label Template_23</name>
+      <text>bits MOD4</text>
+      <x>6</x>
+      <y>17</y>
+      <width>56</width>
+      <height>17</height>
       <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>TPG300 Relay1</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_13</name>
-      <text>?</text>
-      <x>171</x>
-      <y>92</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>TPG300 Relay2</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_14</name>
-      <text>?</text>
-      <x>196</x>
-      <y>92</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>TPG300 Relay3</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_15</name>
-      <text>?</text>
-      <x>221</x>
-      <y>92</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>TPG300 Relay4</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_16</name>
-      <text>?</text>
-      <x>246</x>
-      <y>92</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>TPG300 Error Relay</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_17</name>
-      <text>?</text>
-      <x>271</x>
-      <y>92</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Quench detector Cavity 1</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_18</name>
-      <text>?</text>
-      <x>296</x>
-      <y>92</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Quench detector Cavity 2</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button Template</name>
-      <actions execute_as_one="true">
-        <action type="open_display">
-          <file>Interlocks_fromPLC.bob</file>
-          <macros>
-            <P1>LLRF-Cntrl:SlowIntlk</P1>
-            <P2>HPRF-PwrCpl:WtrCIntlk</P2>
-            <P3>HPRF-Kly:WtrCIntlk</P3>
-          </macros>
-          <target>standalone</target>
-          <description>Show details</description>
-        </action>
-      </actions>
-      <text>?</text>
-      <x>317</x>
-      <y>91</y>
-      <width>25</width>
-      <height>25</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="12.0">
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
         </font>
       </font>
       <foreground_color>
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
-      <tooltip>Interlock signal 
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="array" version="2.0.0">
+      <name>Array</name>
+      <pv_name>$(P):DIN-2:cMask-$(N)</pv_name>
+      <x>13</x>
+      <y>34</y>
+      <width>36</width>
+      <height>220</height>
+      <foreground_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored
+$(pv_name)
+$(pv_value)</tooltip>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box Template_4</name>
+        <bit>-1</bit>
+        <label></label>
+        <width>16</width>
+        <height>25</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <actions>
+        </actions>
+        <tooltip></tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="array" version="2.0.0">
+      <name>Array</name>
+      <pv_name>$(P):DIN-2:sStatus-$(N)</pv_name>
+      <x>85</x>
+      <y>33</y>
+      <width>46</width>
+      <height>220</height>
+      <foreground_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template</name>
+        <bit>0</bit>
+        <width>26</width>
+        <height>25</height>
+        <off_label>OK</off_label>
+        <off_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color red="150" green="150" blue="150">
+          </color>
+        </line_color>
+        <square>true</square>
+        <actions>
+        </actions>
+        <tooltip></tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_2</name>
+      <text>Details</text>
+      <x>155</x>
+      <y>16</y>
+      <width>41</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>163</x>
+      <y>42</y>
+      <width>25</width>
+      <height>204</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_12</name>
+        <text>?</text>
+        <x>7</x>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>TPG300 Relay1</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_13</name>
+        <text>?</text>
+        <x>7</x>
+        <y>26</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>TPG300 Relay2</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_14</name>
+        <text>?</text>
+        <x>7</x>
+        <y>52</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>TPG300 Relay3</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_15</name>
+        <text>?</text>
+        <x>7</x>
+        <y>76</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>TPG300 Relay4</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_16</name>
+        <text>?</text>
+        <x>7</x>
+        <y>103</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>TPG300 Error Relay</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_17</name>
+        <text>?</text>
+        <x>7</x>
+        <y>128</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Quench detector Cavity 1</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_18</name>
+        <text>?</text>
+        <x>7</x>
+        <y>153</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Quench detector Cavity 2</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="action_button" version="3.0.0">
+        <name>Action Button Template</name>
+        <actions execute_as_one="true">
+          <action type="open_display">
+            <file>Interlocks_fromPLC.bob</file>
+            <macros>
+              <P1>LLRF-Cntrl:SlowIntlk</P1>
+              <P2>HPRF-PwrCpl:WtrCIntlk</P2>
+              <P3>HPRF-Kly:WtrCIntlk</P3>
+            </macros>
+            <target>standalone</target>
+            <description>Show details</description>
+          </action>
+        </actions>
+        <text>?</text>
+        <y>179</y>
+        <width>25</width>
+        <height>25</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <tooltip>Interlock signal 
 from the PLC
 (LLRF-Cntrl:SlowIntlk)</tooltip>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_56</name>
+      <text>Input states</text>
+      <x>72</x>
+      <y>15</y>
+      <width>70</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Control</name>
     <x>15</x>
-    <y>15</y>
+    <y>48</y>
     <width>114</width>
     <height>317</height>
     <style>1</style>
@@ -1511,868 +1626,13 @@ Armed</text>
       </border_color>
     </widget>
   </widget>
-  <widget type="group" version="2.0.0">
-    <name>Fast Digital Inputs</name>
-    <x>141</x>
-    <y>70</y>
-    <width>724</width>
-    <height>130</height>
-    <style>1</style>
-    <foreground_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </foreground_color>
-    <background_color>
-      <color red="240" green="240" blue="240">
-      </color>
-    </background_color>
-    <transparent>true</transparent>
-    <actions>
-    </actions>
-    <widget type="array" version="2.0.0">
-      <name>Array</name>
-      <pv_name>$(P):DIN-1:cMask-$(N)</pv_name>
-      <x>152</x>
-      <y>4</y>
-      <width>206</width>
-      <height>45</height>
-      <foreground_color>
-        <color name="Major" red="255" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored
-$(pv_name)
-$(pv_value)</tooltip>
-      <widget type="checkbox" version="2.0.0">
-        <name>Check Box Template</name>
-        <bit>-1</bit>
-        <label></label>
-        <width>186</width>
-        <height>25</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <actions>
-        </actions>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template</name>
-      <text>Unmask bits MOD3</text>
-      <x>10</x>
-      <y>12</y>
-      <width>111</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array</name>
-      <pv_name>$(P):DIN-1:sStatus-$(N)</pv_name>
-      <x>153</x>
-      <y>47</y>
-      <width>206</width>
-      <height>45</height>
-      <foreground_color>
-        <color name="Major" red="255" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="led" version="2.0.0">
-        <name>LED Template</name>
-        <bit>0</bit>
-        <width>186</width>
-        <height>25</height>
-        <off_label>OK</off_label>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color red="150" green="150" blue="150">
-          </color>
-        </line_color>
-        <square>true</square>
-        <actions>
-        </actions>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template</name>
-      <text>Unmask bits MOD5</text>
-      <x>375</x>
-      <y>12</y>
-      <width>111</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array</name>
-      <pv_name>$(P):DIN-3:cMask-$(N)</pv_name>
-      <x>512</x>
-      <y>6</y>
-      <width>206</width>
-      <height>45</height>
-      <foreground_color>
-        <color name="Major" red="255" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored
-$(pv_name)
-$(pv_value)</tooltip>
-      <widget type="checkbox" version="2.0.0">
-        <name>Check Box Template</name>
-        <bit>-1</bit>
-        <label></label>
-        <width>186</width>
-        <height>25</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="14.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <actions>
-        </actions>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array</name>
-      <pv_name>$(P):DIN-3:sStatus-$(N)</pv_name>
-      <x>512</x>
-      <y>46</y>
-      <width>206</width>
-      <height>45</height>
-      <foreground_color>
-        <color name="Major" red="255" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="led" version="2.0.0">
-        <name>LED Template</name>
-        <bit>0</bit>
-        <width>186</width>
-        <height>25</height>
-        <off_label>OK</off_label>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color red="150" green="150" blue="150">
-          </color>
-        </line_color>
-        <square>true</square>
-        <actions>
-        </actions>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group</name>
-      <x>3</x>
-      <y>55</y>
-      <width>149</width>
-      <height>33</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label Template</name>
-        <text>Input states (latched</text>
-        <x>7</x>
-        <width>121</width>
-        <height>19</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <auto_size>true</auto_size>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_10</name>
-      <text>?</text>
-      <x>235</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet04</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_8</name>
-      <text>?</text>
-      <x>260</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet05</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_9</name>
-      <text>?</text>
-      <x>285</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet06</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_7</name>
-      <text>?</text>
-      <x>310</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet07</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_12</name>
-      <text>?</text>
-      <x>525</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Interlock from Lund's
-LLRF system 1</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_13</name>
-      <text>?</text>
-      <x>550</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Interlock from Lund's
-LLRF system 2</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_14</name>
-      <text>?</text>
-      <x>575</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Electron pickup 
-from the coupler 1</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_15</name>
-      <text>?</text>
-      <x>600</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Electron pickup 
-from the coupler 2</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_16</name>
-      <text>?</text>
-      <x>625</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet09</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_17</name>
-      <text>?</text>
-      <x>650</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet10</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_18</name>
-      <text>?</text>
-      <x>677</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet11</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_19</name>
-      <text>?</text>
-      <x>703</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet12</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_24</name>
-      <text>?</text>
-      <x>337</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet08</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_11</name>
-      <text>?</text>
-      <x>210</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet03</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_5</name>
-      <text>?</text>
-      <x>185</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet02</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_5</name>
-      <text>?</text>
-      <x>160</x>
-      <y>84</y>
-      <width>8</width>
-      <height>24</height>
-      <font>
-        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>Arc detector ArcDet01</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="group" version="2.0.0">
-      <name>Group_1</name>
-      <x>375</x>
-      <y>55</y>
-      <width>140</width>
-      <height>33</height>
-      <style>3</style>
-      <transparent>true</transparent>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_20</name>
-        <text>when Interlock triggered)</text>
-        <y>15</y>
-        <width>149</width>
-        <height>19</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <auto_size>true</auto_size>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-      <widget type="label" version="2.0.0">
-        <name>Label Template_21</name>
-        <text>Input states (latched</text>
-        <width>121</width>
-        <height>19</height>
-        <font>
-          <font family="Source Sans Pro" style="REGULAR" size="13.0">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <background_color>
-          <color name="BACKGROUND" red="220" green="225" blue="221">
-          </color>
-        </background_color>
-        <vertical_alignment>1</vertical_alignment>
-        <auto_size>true</auto_size>
-        <actions>
-        </actions>
-        <border_color>
-          <color name="IO Border" red="215" green="215" blue="215">
-          </color>
-        </border_color>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_4</name>
-      <text>when Interlock triggered)</text>
-      <x>10</x>
-      <y>70</y>
-      <width>149</width>
-      <height>18</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
-    <text>Interlock 
-Status</text>
+    <text>Interlock</text>
     <x>141</x>
     <y>16</y>
-    <width>74</width>
-    <height>49</height>
+    <width>70</width>
+    <height>23</height>
     <font>
       <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
       </font>
@@ -2549,7 +1809,7 @@ Status</text>
     <name>Text Update Template_1</name>
     <pv_name>$(P):Intlk-trg:sTimeStamp-$(N)</pv_name>
     <x>537</x>
-    <y>45</y>
+    <y>46</y>
     <width>326</width>
     <height>18</height>
     <font>
@@ -2575,49 +1835,1011 @@ Status</text>
       </color>
     </border_color>
   </widget>
-  <widget type="array" version="2.0.0">
-    <name>Array</name>
-    <pv_name>$(P):DIN-2:cMask-$(N)</pv_name>
-    <x>888</x>
-    <y>120</y>
-    <width>206</width>
-    <height>220</height>
+  <widget type="group" version="2.0.0">
+    <name>Fast Digital Inputs</name>
+    <x>180</x>
+    <y>79</y>
+    <width>466</width>
+    <height>297</height>
+    <style>1</style>
     <foreground_color>
-      <color name="Major" red="255" green="0" blue="0">
+      <color red="0" green="128" blue="255">
       </color>
     </foreground_color>
     <background_color>
       <color red="240" green="240" blue="240">
       </color>
     </background_color>
+    <transparent>true</transparent>
     <actions>
     </actions>
-    <tooltip>When bit is checked (1) the corresponding
+    <widget type="label" version="2.0.0">
+      <name>Label Template_25</name>
+      <text>Unmask</text>
+      <x>11</x>
+      <y>3</y>
+      <width>45</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_26</name>
+      <text>bits MOD3</text>
+      <x>6</x>
+      <y>17</y>
+      <width>56</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_27</name>
+      <text>Details</text>
+      <x>157</x>
+      <y>15</y>
+      <width>41</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_35</name>
+      <text>Unmask</text>
+      <x>265</x>
+      <y>2</y>
+      <width>45</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_36</name>
+      <text>bits MOD5</text>
+      <x>263</x>
+      <y>16</y>
+      <width>56</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored</tooltip>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_37</name>
+      <text>Details</text>
+      <x>407</x>
+      <y>15</y>
+      <width>41</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="array" version="2.0.0">
+      <name>Array_9</name>
+      <pv_name>$(P):DIN-1:sStatus-$(N)</pv_name>
+      <x>84</x>
+      <y>32</y>
+      <width>46</width>
+      <height>220</height>
+      <foreground_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_3</name>
+        <bit>0</bit>
+        <width>26</width>
+        <height>25</height>
+        <off_label>OK</off_label>
+        <off_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color red="150" green="150" blue="150">
+          </color>
+        </line_color>
+        <square>true</square>
+        <actions>
+        </actions>
+        <tooltip></tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="array" version="2.0.0">
+      <name>Array_7</name>
+      <pv_name>$(P):DIN-1:cMask-$(N)</pv_name>
+      <x>16</x>
+      <y>33</y>
+      <width>36</width>
+      <height>220</height>
+      <foreground_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
 input bit is included in the interlock
 chain.
 When bit is unchecked (0) the corresponding
  input bit is ignored
 $(pv_name)
 $(pv_value)</tooltip>
-    <widget type="checkbox" version="2.0.0">
-      <name>Check Box Template_4</name>
-      <bit>-1</bit>
-      <label></label>
-      <width>186</width>
-      <height>25</height>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box Template_7</name>
+        <bit>-1</bit>
+        <label></label>
+        <width>16</width>
+        <height>25</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <actions>
+        </actions>
+        <tooltip></tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="array" version="2.0.0">
+      <name>Array_10</name>
+      <pv_name>$(P):DIN-3:sStatus-$(N)</pv_name>
+      <x>337</x>
+      <y>31</y>
+      <width>46</width>
+      <height>220</height>
+      <foreground_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <widget type="led" version="2.0.0">
+        <name>LED Template_4</name>
+        <bit>0</bit>
+        <width>26</width>
+        <height>25</height>
+        <off_label>OK</off_label>
+        <off_color>
+          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+          </color>
+        </off_color>
+        <on_color>
+          <color name="RED" red="252" green="13" blue="27">
+          </color>
+        </on_color>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <line_color>
+          <color red="150" green="150" blue="150">
+          </color>
+        </line_color>
+        <square>true</square>
+        <actions>
+        </actions>
+        <tooltip></tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="array" version="2.0.0">
+      <name>Array_8</name>
+      <pv_name>$(P):DIN-3:cMask-$(N)</pv_name>
+      <x>273</x>
+      <y>34</y>
+      <width>36</width>
+      <height>220</height>
+      <foreground_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+      <tooltip>When bit is checked (1) the corresponding
+input bit is included in the interlock
+chain.
+When bit is unchecked (0) the corresponding
+ input bit is ignored
+$(pv_name)
+$(pv_value)</tooltip>
+      <widget type="checkbox" version="2.0.0">
+        <name>Check Box Template_8</name>
+        <bit>-1</bit>
+        <label></label>
+        <width>16</width>
+        <height>25</height>
+        <font>
+          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92">
+          </color>
+        </foreground_color>
+        <actions>
+        </actions>
+        <tooltip></tooltip>
+        <border_alarm_sensitive>false</border_alarm_sensitive>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>168</x>
+      <y>41</y>
+      <width>8</width>
+      <height>201</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_5</name>
+        <text>?</text>
+        <y>25</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet02</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_11</name>
+        <text>?</text>
+        <y>50</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet03</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_10</name>
+        <text>?</text>
+        <y>76</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet04</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_8</name>
+        <text>?</text>
+        <y>101</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet05</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_9</name>
+        <text>?</text>
+        <y>125</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet06</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_7</name>
+        <text>?</text>
+        <y>151</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet07</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_24</name>
+        <text>?</text>
+        <y>177</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet08</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_5</name>
+        <text>?</text>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet01</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Group</name>
+      <x>419</x>
+      <y>36</y>
+      <width>8</width>
+      <height>205</height>
+      <style>3</style>
+      <transparent>true</transparent>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_45</name>
+        <text>?</text>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Interlock from Lund's
+LLRF system 1</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_46</name>
+        <text>?</text>
+        <y>28</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Interlock from Lund's
+LLRF system 2</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_47</name>
+        <text>?</text>
+        <y>54</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Electron pickup 
+from the coupler 1</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_48</name>
+        <text>?</text>
+        <y>79</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Electron pickup 
+from the coupler 2</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_49</name>
+        <text>?</text>
+        <y>104</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet09</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_50</name>
+        <text>?</text>
+        <y>129</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet10</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_51</name>
+        <text>?</text>
+        <y>153</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet11</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_52</name>
+        <text>?</text>
+        <y>181</y>
+        <width>8</width>
+        <height>24</height>
+        <font>
+          <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <auto_size>true</auto_size>
+        <actions>
+        </actions>
+        <tooltip>Arc detector ArcDet12</tooltip>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_53</name>
+      <text>Input states</text>
+      <x>73</x>
+      <y>13</y>
+      <width>70</width>
+      <height>18</height>
       <font>
-        <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
       </font>
       <foreground_color>
-        <color name="IO Text Fg" red="0" green="32" blue="92">
+        <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
       <actions>
       </actions>
-      <tooltip>
-null</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_55</name>
+      <text>Input states</text>
+      <x>327</x>
+      <y>14</y>
+      <width>70</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template_20</name>
+      <text>(latched when Interlock triggered)</text>
+      <x>130</x>
+      <y>257</y>
+      <width>186</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline</name>
+      <x>316</x>
+      <y>251</y>
+      <width>17</width>
+      <height>15</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>10</arrow_length>
+      <points>
+        <point x="0.0" y="15.0">
+        </point>
+        <point x="17.700000000000045" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_1</name>
+      <x>112</x>
+      <y>253</y>
+      <width>15</width>
+      <height>13</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>2</arrows>
+      <arrow_length>10</arrow_length>
+      <points>
+        <point x="15.899999999999977" y="13.400000000000034">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template_57</name>
+    <text>Status</text>
+    <x>140</x>
+    <y>35</y>
+    <width>51</width>
+    <height>23</height>
+    <font>
+      <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
   </widget>
 </display>
