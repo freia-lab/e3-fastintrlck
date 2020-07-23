@@ -14,8 +14,8 @@
   <grid_visible>false</grid_visible>
   <widget type="group" version="2.0.0">
     <name>Analog Inputs [V] &amp; Post Mortem Data</name>
-    <x>35</x>
-    <y>373</y>
+    <x>30</x>
+    <y>381</y>
     <width>1086</width>
     <height>418</height>
     <style>1</style>

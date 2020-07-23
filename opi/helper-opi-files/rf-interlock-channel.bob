@@ -579,7 +579,7 @@ When bit is unchecked (0) the corresponding
       <name>Label Template_5</name>
       <text>?</text>
       <x>110</x>
-      <y>32</y>
+      <y>38</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -608,7 +608,7 @@ When bit is unchecked (0) the corresponding
       <name>Label Template_6</name>
       <text>?</text>
       <x>110</x>
-      <y>54</y>
+      <y>58</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -666,7 +666,7 @@ When bit is unchecked (0) the corresponding
       <name>Label Template_8</name>
       <text>?</text>
       <x>110</x>
-      <y>95</y>
+      <y>94</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -695,7 +695,7 @@ When bit is unchecked (0) the corresponding
       <name>Label Template_9</name>
       <text>?</text>
       <x>110</x>
-      <y>115</y>
+      <y>112</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -725,7 +725,7 @@ When bit is unchecked (0) the corresponding
       <name>Label Template_10</name>
       <text>?</text>
       <x>110</x>
-      <y>135</y>
+      <y>130</y>
       <width>8</width>
       <height>24</height>
       <font>
@@ -754,7 +754,7 @@ When bit is unchecked (0) the corresponding
   </widget>
   <widget type="xyplot" version="2.0.0">
     <name>XY Graph Template</name>
-    <x>737</x>
+    <x>730</x>
     <y>389</y>
     <width>323</width>
     <height>391</height>
@@ -1020,9 +1020,9 @@ When bit is unchecked (0) the corresponding
   </widget>
   <widget type="group" version="2.0.0">
     <name>Digital Inputs</name>
-    <x>684</x>
+    <x>730</x>
     <y>79</y>
-    <width>250</width>
+    <width>288</width>
     <height>297</height>
     <style>1</style>
     <foreground_color>
@@ -1036,196 +1036,22 @@ When bit is unchecked (0) the corresponding
     <transparent>true</transparent>
     <actions>
     </actions>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_3</name>
-      <text>Unmask</text>
-      <x>9</x>
-      <y>3</y>
-      <width>45</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_23</name>
-      <text>bits MOD4</text>
-      <x>6</x>
-      <y>17</y>
-      <width>56</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array</name>
-      <pv_name>$(P):DIN-2:cMask-$(N)</pv_name>
-      <x>13</x>
-      <y>34</y>
-      <width>36</width>
-      <height>220</height>
-      <foreground_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored
-$(pv_name)
-$(pv_value)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <widget type="checkbox" version="2.0.0">
-        <name>Check Box Template_4</name>
-        <bit>-1</bit>
-        <label></label>
-        <width>16</width>
-        <height>25</height>
-        <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
-          </color>
-        </foreground_color>
-        <actions>
-        </actions>
-        <tooltip></tooltip>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array</name>
-      <pv_name>$(P):DIN-2:sStatus-$(N)</pv_name>
-      <x>85</x>
-      <y>33</y>
-      <width>46</width>
-      <height>220</height>
-      <foreground_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <widget type="led" version="2.0.0">
-        <name>LED Template</name>
-        <bit>0</bit>
-        <width>26</width>
-        <height>25</height>
-        <off_label>OK</off_label>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color red="150" green="150" blue="150">
-          </color>
-        </line_color>
-        <square>true</square>
-        <actions>
-        </actions>
-        <tooltip></tooltip>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_2</name>
-      <text>Details</text>
-      <x>155</x>
-      <y>16</y>
-      <width>41</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <file>MOD-display.bob</file>
+      <macros>
+        <DINNR>2</DINNR>
+        <MODNR>4</MODNR>
+      </macros>
+      <x>28</x>
+      <y>4</y>
+      <width>210</width>
+      <height>270</height>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Group</name>
-      <x>163</x>
-      <y>42</y>
+      <x>199</x>
+      <y>53</y>
       <width>25</width>
       <height>204</height>
       <style>3</style>
@@ -1463,34 +1289,6 @@ from the PLC
 (LLRF-Cntrl:SlowIntlk)</tooltip>
       </widget>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_56</name>
-      <text>Input states</text>
-      <x>72</x>
-      <y>15</y>
-      <width>70</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Control</name>
@@ -1631,7 +1429,7 @@ Armed</text>
   <widget type="label" version="2.0.0">
     <name>Label Template</name>
     <text>Interlock</text>
-    <x>141</x>
+    <x>162</x>
     <y>16</y>
     <width>70</width>
     <height>24</height>
@@ -1839,9 +1637,9 @@ Armed</text>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Fast Digital Inputs</name>
-    <x>180</x>
+    <x>161</x>
     <y>79</y>
-    <width>466</width>
+    <width>546</width>
     <height>297</height>
     <style>1</style>
     <foreground_color>
@@ -1855,380 +1653,34 @@ Armed</text>
     <transparent>true</transparent>
     <actions>
     </actions>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_25</name>
-      <text>Unmask</text>
-      <x>11</x>
-      <y>3</y>
-      <width>45</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <file>MOD-display.bob</file>
+      <macros>
+        <DINNR>1</DINNR>
+        <MODNR>3</MODNR>
+      </macros>
+      <x>29</x>
+      <y>4</y>
+      <width>210</width>
+      <height>270</height>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_26</name>
-      <text>bits MOD3</text>
-      <x>6</x>
-      <y>17</y>
-      <width>56</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_27</name>
-      <text>Details</text>
-      <x>157</x>
-      <y>15</y>
-      <width>41</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_35</name>
-      <text>Unmask</text>
-      <x>265</x>
-      <y>2</y>
-      <width>45</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_36</name>
-      <text>bits MOD5</text>
-      <x>263</x>
-      <y>16</y>
-      <width>56</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored</tooltip>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_37</name>
-      <text>Details</text>
-      <x>407</x>
-      <y>15</y>
-      <width>41</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array_9</name>
-      <pv_name>$(P):DIN-1:sStatus-$(N)</pv_name>
-      <x>84</x>
-      <y>32</y>
-      <width>46</width>
-      <height>220</height>
-      <foreground_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <widget type="led" version="2.0.0">
-        <name>LED Template_3</name>
-        <bit>0</bit>
-        <width>26</width>
-        <height>25</height>
-        <off_label>OK</off_label>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color red="150" green="150" blue="150">
-          </color>
-        </line_color>
-        <square>true</square>
-        <actions>
-        </actions>
-        <tooltip></tooltip>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array_7</name>
-      <pv_name>$(P):DIN-1:cMask-$(N)</pv_name>
-      <x>16</x>
-      <y>33</y>
-      <width>36</width>
-      <height>220</height>
-      <foreground_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored
-$(pv_name)
-$(pv_value)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-      <widget type="checkbox" version="2.0.0">
-        <name>Check Box Template_7</name>
-        <bit>-1</bit>
-        <label></label>
-        <width>16</width>
-        <height>25</height>
-        <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
-          </color>
-        </foreground_color>
-        <actions>
-        </actions>
-        <tooltip></tooltip>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array_10</name>
-      <pv_name>$(P):DIN-3:sStatus-$(N)</pv_name>
-      <x>337</x>
-      <y>31</y>
-      <width>46</width>
-      <height>220</height>
-      <foreground_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <widget type="led" version="2.0.0">
-        <name>LED Template_4</name>
-        <bit>0</bit>
-        <width>26</width>
-        <height>25</height>
-        <off_label>OK</off_label>
-        <off_color>
-          <color name="LED-GREEN-ON" red="70" green="255" blue="70">
-          </color>
-        </off_color>
-        <on_color>
-          <color name="RED" red="252" green="13" blue="27">
-          </color>
-        </on_color>
-        <foreground_color>
-          <color name="BLACK" red="0" green="0" blue="0">
-          </color>
-        </foreground_color>
-        <line_color>
-          <color red="150" green="150" blue="150">
-          </color>
-        </line_color>
-        <square>true</square>
-        <actions>
-        </actions>
-        <tooltip></tooltip>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
-    </widget>
-    <widget type="array" version="2.0.0">
-      <name>Array_8</name>
-      <pv_name>$(P):DIN-3:cMask-$(N)</pv_name>
-      <x>273</x>
-      <y>34</y>
-      <width>36</width>
-      <height>220</height>
-      <foreground_color>
-        <color name="RED" red="252" green="13" blue="27">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color red="240" green="240" blue="240">
-        </color>
-      </background_color>
-      <actions>
-      </actions>
-      <tooltip>When bit is checked (1) the corresponding
-input bit is included in the interlock
-chain.
-When bit is unchecked (0) the corresponding
- input bit is ignored
-$(pv_name)
-$(pv_value)</tooltip>
-      <widget type="checkbox" version="2.0.0">
-        <name>Check Box Template_8</name>
-        <bit>-1</bit>
-        <label></label>
-        <width>16</width>
-        <height>25</height>
-        <font>
-          <font name="IO Input 1" family="arial" style="BOLD" size="9.900990099009901">
-          </font>
-        </font>
-        <foreground_color>
-          <color name="IO Text Fg" red="0" green="32" blue="92">
-          </color>
-        </foreground_color>
-        <actions>
-        </actions>
-        <tooltip></tooltip>
-        <border_alarm_sensitive>false</border_alarm_sensitive>
-      </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <file>MOD-display.bob</file>
+      <macros>
+        <DINNR>3</DINNR>
+        <MODNR>5</MODNR>
+      </macros>
+      <x>298</x>
+      <y>4</y>
+      <width>210</width>
+      <height>270</height>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Group</name>
-      <x>168</x>
-      <y>41</y>
+      <x>207</x>
+      <y>53</y>
       <width>8</width>
       <height>201</height>
       <style>3</style>
@@ -2459,8 +1911,8 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="group" version="2.0.0">
       <name>Group</name>
-      <x>419</x>
-      <y>36</y>
+      <x>474</x>
+      <y>53</y>
       <width>8</width>
       <height>205</height>
       <style>3</style>
@@ -2693,125 +2145,19 @@ from the coupler 2</tooltip>
         </border_color>
       </widget>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_53</name>
-      <text>Input states</text>
-      <x>73</x>
-      <y>13</y>
-      <width>70</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_55</name>
-      <text>Input states</text>
-      <x>327</x>
-      <y>14</y>
-      <width>70</width>
-      <height>19</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="14.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label Template_20</name>
-      <text>(latched when Interlock triggered)</text>
-      <x>130</x>
-      <y>257</y>
-      <width>186</width>
-      <height>17</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="13.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="BACKGROUND" red="220" green="225" blue="221">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <auto_size>true</auto_size>
-      <actions>
-      </actions>
-      <border_color>
-        <color name="IO Border" red="215" green="215" blue="215">
-        </color>
-      </border_color>
-    </widget>
     <widget type="polyline" version="2.0.0">
-      <name>Polyline</name>
-      <x>316</x>
-      <y>251</y>
-      <width>17</width>
-      <height>15</height>
+      <name>Polyline_2</name>
+      <x>268</x>
+      <y>22</y>
+      <width>7</width>
+      <height>236</height>
       <line_width>2</line_width>
       <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
+        <color red="0" green="128" blue="255">
         </color>
       </line_color>
-      <arrows>2</arrows>
-      <arrow_length>10</arrow_length>
       <points>
-        <point x="0.0" y="15.0">
-        </point>
-        <point x="17.700000000000045" y="0.0">
-        </point>
-      </points>
-    </widget>
-    <widget type="polyline" version="2.0.0">
-      <name>Polyline_1</name>
-      <x>112</x>
-      <y>253</y>
-      <width>15</width>
-      <height>13</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>2</arrows>
-      <arrow_length>10</arrow_length>
-      <points>
-        <point x="15.899999999999977" y="13.400000000000034">
+        <point x="0.0" y="236.00000000000003">
         </point>
         <point x="0.0" y="0.0">
         </point>
@@ -2821,7 +2167,7 @@ from the coupler 2</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label Template_57</name>
     <text>Status</text>
-    <x>140</x>
+    <x>161</x>
     <y>35</y>
     <width>51</width>
     <height>24</height>
