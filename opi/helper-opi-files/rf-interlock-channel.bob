@@ -1262,7 +1262,7 @@ When bit is unchecked (0) the corresponding
         <name>Action Button Template</name>
         <actions execute_as_one="true">
           <action type="open_display">
-            <file>Interlocks_fromPLC.bob</file>
+            <file>../../freia-symbols/display-builder/CmdPanels/Interlocks_fromPLC.bob</file>
             <macros>
               <P1>LLRF-Cntrl:SlowIntlk</P1>
               <P2>HPRF-PwrCpl:WtrCIntlk</P2>
