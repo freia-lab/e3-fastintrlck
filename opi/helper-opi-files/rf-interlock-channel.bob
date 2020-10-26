@@ -38,7 +38,7 @@
       <width>70</width>
       <height>308</height>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </foreground_color>
       <background_color>
@@ -82,7 +82,7 @@
       <width>70</width>
       <height>308</height>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </foreground_color>
       <background_color>
@@ -126,7 +126,7 @@
       <width>70</width>
       <height>308</height>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </foreground_color>
       <background_color>
@@ -170,7 +170,7 @@
       <width>46</width>
       <height>308</height>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </foreground_color>
       <background_color>
@@ -227,7 +227,7 @@ $(pv_value)</tooltip>
       <width>46</width>
       <height>308</height>
       <foreground_color>
-        <color red="0" green="0" blue="0">
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
         </color>
       </foreground_color>
       <background_color>
@@ -299,7 +299,7 @@ PM Dump</text>
       <x>30</x>
       <y>14</y>
       <width>37</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -327,7 +327,7 @@ PM Dump</text>
       <x>162</x>
       <y>14</y>
       <width>22</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -355,7 +355,7 @@ PM Dump</text>
       <x>244</x>
       <y>14</y>
       <width>24</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -383,7 +383,7 @@ PM Dump</text>
       <x>318</x>
       <y>14</y>
       <width>49</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -416,7 +416,7 @@ When bit is unchecked (0) the corresponding
       <x>379</x>
       <y>14</y>
       <width>53</width>
-      <height>19</height>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -581,7 +581,7 @@ When bit is unchecked (0) the corresponding
       <x>110</x>
       <y>38</y>
       <width>8</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -610,7 +610,7 @@ When bit is unchecked (0) the corresponding
       <x>110</x>
       <y>58</y>
       <width>8</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -639,7 +639,7 @@ When bit is unchecked (0) the corresponding
       <x>110</x>
       <y>76</y>
       <width>8</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -668,7 +668,7 @@ When bit is unchecked (0) the corresponding
       <x>110</x>
       <y>94</y>
       <width>8</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -697,7 +697,7 @@ When bit is unchecked (0) the corresponding
       <x>110</x>
       <y>112</y>
       <width>8</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -727,7 +727,7 @@ When bit is unchecked (0) the corresponding
       <x>110</x>
       <y>130</y>
       <width>8</width>
-      <height>24</height>
+      <height>23</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -828,6 +828,7 @@ When bit is unchecked (0) the corresponding
           </color>
         </color>
         <line_width>1</line_width>
+        <line_style>0</line_style>
         <point_type>2</point_type>
         <point_size>4</point_size>
         <visible>true</visible>
@@ -1038,11 +1039,11 @@ When bit is unchecked (0) the corresponding
     </actions>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_1</name>
-      <file>MOD-display.bob</file>
       <macros>
         <DINNR>2</DINNR>
         <MODNR>4</MODNR>
       </macros>
+      <file>MOD-display.bob</file>
       <x>28</x>
       <y>4</y>
       <width>210</width>
@@ -1061,7 +1062,7 @@ When bit is unchecked (0) the corresponding
         <text>?</text>
         <x>7</x>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1090,7 +1091,7 @@ When bit is unchecked (0) the corresponding
         <x>7</x>
         <y>26</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1119,7 +1120,7 @@ When bit is unchecked (0) the corresponding
         <x>7</x>
         <y>52</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1148,7 +1149,7 @@ When bit is unchecked (0) the corresponding
         <x>7</x>
         <y>76</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1177,7 +1178,7 @@ When bit is unchecked (0) the corresponding
         <x>7</x>
         <y>103</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1206,7 +1207,7 @@ When bit is unchecked (0) the corresponding
         <x>7</x>
         <y>128</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1235,7 +1236,7 @@ When bit is unchecked (0) the corresponding
         <x>7</x>
         <y>153</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1655,11 +1656,11 @@ Armed</text>
     </actions>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
-      <file>MOD-display.bob</file>
       <macros>
         <DINNR>1</DINNR>
         <MODNR>3</MODNR>
       </macros>
+      <file>MOD-display.bob</file>
       <x>29</x>
       <y>4</y>
       <width>210</width>
@@ -1667,11 +1668,11 @@ Armed</text>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_2</name>
-      <file>MOD-display.bob</file>
       <macros>
         <DINNR>3</DINNR>
         <MODNR>5</MODNR>
       </macros>
+      <file>MOD-display.bob</file>
       <x>298</x>
       <y>4</y>
       <width>210</width>
@@ -1690,7 +1691,7 @@ Armed</text>
         <text>?</text>
         <y>25</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1718,7 +1719,7 @@ Armed</text>
         <text>?</text>
         <y>50</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1746,7 +1747,7 @@ Armed</text>
         <text>?</text>
         <y>76</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1774,7 +1775,7 @@ Armed</text>
         <text>?</text>
         <y>101</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1802,7 +1803,7 @@ Armed</text>
         <text>?</text>
         <y>125</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1830,7 +1831,7 @@ Armed</text>
         <text>?</text>
         <y>151</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1858,7 +1859,7 @@ Armed</text>
         <text>?</text>
         <y>177</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1885,7 +1886,7 @@ Armed</text>
         <name>Label Template_5</name>
         <text>?</text>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1921,7 +1922,7 @@ Armed</text>
         <name>Label Template_45</name>
         <text>?</text>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1950,7 +1951,7 @@ LLRF system 1</tooltip>
         <text>?</text>
         <y>28</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -1979,7 +1980,7 @@ LLRF system 2</tooltip>
         <text>?</text>
         <y>54</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -2008,7 +2009,7 @@ from the coupler 1</tooltip>
         <text>?</text>
         <y>79</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -2037,7 +2038,7 @@ from the coupler 2</tooltip>
         <text>?</text>
         <y>104</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -2065,7 +2066,7 @@ from the coupler 2</tooltip>
         <text>?</text>
         <y>129</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -2093,7 +2094,7 @@ from the coupler 2</tooltip>
         <text>?</text>
         <y>153</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -2121,7 +2122,7 @@ from the coupler 2</tooltip>
         <text>?</text>
         <y>181</y>
         <width>8</width>
-        <height>24</height>
+        <height>23</height>
         <font>
           <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
           </font>
@@ -2151,17 +2152,17 @@ from the coupler 2</tooltip>
       <y>22</y>
       <width>7</width>
       <height>236</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="236.00000000000003">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </line_color>
     </widget>
   </widget>
   <widget type="label" version="2.0.0">
