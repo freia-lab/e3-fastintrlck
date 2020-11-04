@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>RF Interlocks</name>
   <width>1485</width>
   <height>1270</height>
   <background_color>
@@ -15,7 +16,7 @@
     <x>325</x>
     <y>2</y>
     <width>202</width>
-    <height>46</height>
+    <height>48</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -62,10 +63,10 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Linking Container Template</name>
-            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <macros>
               <N>1</N>
             </macros>
+            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <width>1465</width>
             <height>1113</height>
             <actions>
@@ -82,10 +83,10 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Linking Container Template</name>
-            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <macros>
               <N>2</N>
             </macros>
+            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <width>1465</width>
             <height>1113</height>
             <actions>
@@ -102,10 +103,10 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Linking Container Template</name>
-            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <macros>
               <N>3</N>
             </macros>
+            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <width>1465</width>
             <height>1113</height>
             <actions>
@@ -122,10 +123,10 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Linking Container Template</name>
-            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <macros>
               <N>4</N>
             </macros>
+            <file>helper-opi-files/rf-interlock-channel.bob</file>
             <width>1465</width>
             <height>1113</height>
             <actions>
