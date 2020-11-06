@@ -16,3 +16,7 @@ IntlkF-cRio1:PMD:cSelChan.BE
 IntlkF-cRio1:PMD:cSelChan.BF
 IntlkF-cRio1:PMD:cStartCp
 Cav1-Coupl:MultipactDet:I.ADEL
+IntlkF-cRio1:Intlk:sAlarm-1.OSV
+IntlkF-cRio1:Intlk:sAlarm-2.OSV
+IntlkF-cRio1:Intlk:sAlarm-3.OSV
+IntlkF-cRio1:Intlk:sAlarm-4.OSV

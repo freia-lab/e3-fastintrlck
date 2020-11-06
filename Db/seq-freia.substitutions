@@ -17,3 +17,11 @@ file "seq-freia-pmd-waveform.template" { pattern
 {$(P), "14"}
 {$(P), "15"}
 }
+
+file "rf-intlk-alarm.template" { pattern
+{P,  			N}
+{"IntlkF-cRio1:Intlk", "1"}
+{"IntlkF-cRio1:Intlk", "2"}
+{"IntlkF-cRio1:Intlk", "3"}
+{"IntlkF-cRio1:Intlk", "4"}
+}

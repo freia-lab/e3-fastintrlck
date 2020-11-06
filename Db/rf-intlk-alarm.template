@@ -1,0 +1,9 @@
+record (bi, "$(P):sAlarm-$(N)") {
+  field(SCAN, "1 second")
+  field(DESC, "Alarm on sTrggered-$(N)")
+  field(INP, "$(P):sTriggered-$(N)")
+  field(ZNAM, "OK")
+  field(ONAM, "Fault")
+  field(OSV, "MAJOR")
+}
+
