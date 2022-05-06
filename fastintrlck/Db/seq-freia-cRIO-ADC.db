@@ -16,4 +16,5 @@ record (ai, "$(NAME)") {
    field (HOPR, "$(HOPR)")
    field (EOFF, "$(EOFF)")
    field (ESLO, "$(ESLO)")
+   info (autosaveFields, "ADEL") 
 }

@@ -1,13 +1,19 @@
-EXCLUDE_ARCHS += eldk
-EXCLUDE_VERSIONS = 3.14
+# Copyright (C) 2022  FREIA Laboratory
 
-include $(EPICS_ENV_PATH)/module.Makefile
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 
-PROJECT=ioc_seq_freia
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 
-# USR_DEPENDENCIES = 
-USR_DEPENDENCIES += autosave,5.7+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-#MISCS = $(AUTOMISCS)
-MISCS += misc/ioc-seq-freia.req
-OPIS = opi
+
+TOP := $(CURDIR)
+include $(TOP)/configure/CONFIG
+include $(TOP)/configure/RULES

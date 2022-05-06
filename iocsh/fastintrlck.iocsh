@@ -1,0 +1,19 @@
+# This should be the included snippet to configure and run the deployed IOC. It should be loaded with
+#
+#   iocshLoad("$(fastintrlck_DIR)/fastintrlck.iocsh", "P=PV_Prefix")
+
+#- ###                fastintrlck iocsh              ###
+#- ####################################################
+#- >> Mandatory
+#- P				- PV prefix
+#- TOP				- top directory for autosave files
+#- IOCNAME			- IOC name used by autosave
+
+dbLoadRecords("seq-freia-gen.db","P=$(P)")
+dbLoadRecords("seq-freia.db","P=$(P)")
+dbLoadRecords("seq-freia-cRIO-ADC.db","P=$(P), INDX=2, NAME=Cav1-Coupl:MultipactDet:I, EGU=mA, LINR=LINEAR, LOPR=0.0, HOPR=10.0, EOFF=0.0, ESLO=0.001")
+dbLoadRecords("seq-freia-cRIO-ADC.db","P=$(P), INDX=3, NAME=Cav2-Coupl:MultipactDet:I, EGU=mA, LINR=LINEAR, LOPR=0.0, HOPR=10.0, EOFF=0.0, ESLO=0.001")
+
+iocshLoad("$(autosave_DIR)/autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCNAME),IOCDIR=fastintrlck")
+
+afterInit(seq copy_PMD "p1=$(P)")

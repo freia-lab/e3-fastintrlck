@@ -2,6 +2,7 @@ record (bo, "$(P):PMD:cStartCp") {
   field(DESC, "Start PMD copy")
   field(ZNAM, "Do nothing")
   field(ONAM, "Copy PMD")
+  info (autosaveFields, "VAL")
 }
 
 record (bi, "$(P):PMD:sBusy") {
@@ -32,6 +33,7 @@ record (mbboDirect, "$(P):PMD:cSelChan") {
   field(DESC, "PMD channels to copy")
   field(PINI,"YES")
   field(NOBT, "16")
+  info (autosaveFields, "B0 B1 B2 B3 B4 B5 B6 B7 88 B9 BA BB BC BD BE BF")
 }
 
 record(calc, "$(P):Intlk:sHB-CNT") {
