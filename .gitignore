@@ -10,6 +10,7 @@
 core.*
 *-loc/*.Makefile
 fastintrlck/*.Makefile
+fastintrlck/O.*
 cellMods/
 testMods*/
 *PVs.list
