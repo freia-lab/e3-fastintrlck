@@ -8,13 +8,14 @@ record(calc, "$(P):ADC-$(INDX):sRdV-1") {
 
 record (ai, "$(NAME)") {
    field (DESC, "$(P):ADC:sRdV[$(INDX)] in EGU")
-   field (EGU, "$(EGU)")
+   field (EGU, "$(EGU=V)")
    field (INP, "$(P):ADC-$(INDX):sRdV-1")
    field (DTYP, "Raw Soft Channel")
    field (LINR, "LINEAR")
-   field (LOPR, "$(LOPR)")
-   field (HOPR, "$(HOPR)")
-   field (EOFF, "$(EOFF)")
-   field (ESLO, "$(ESLO)")
+   field (LOPR, "$(LOPR=-10.0)")
+   field (HOPR, "$(HOPR=10.0)")
+   field (EOFF, "$(EOFF=0.0)")
+   field (PREC, "$(PREC=4)")
+   field (ESLO, "$(ESLO=0.001)")
    info (autosaveFields, "ADEL") 
 }
